@@ -2748,6 +2748,10 @@
           "rotates": false
         },
         {
+          "id": "nomex_socks",
+          "fg": 365
+        },
+        {
           "id": "footrags_wool",
           "fg": 366,
           "bg": 957
@@ -5052,6 +5056,11 @@
           "rotates": false
         },
         {
+          "id": "overlay_worn_nomex_hood",
+          "fg": 657,
+          "rotates": false
+        },
+        {
           "id": "overlay_worn_hood_survivor",
           "fg": 658,
           "rotates": false
@@ -5547,11 +5556,24 @@
           "fg": 724,
           "rotates": false
         },
-
+        {
+          "id": "overlay_worn_nomex_socks",
+          "fg": 725,
+          "rotates": false
+        },
         {
           "id": "overlay_worn_footrags_leather",
           "fg": 725,
           "rotates": false
+        },
+        {
+          "id": "overlay_worn_nomex_suit",
+          "fg": 726,
+          "rotates": false
+        },
+        {
+          "id": "nomex_suit",
+          "fg": 726
         },
         {
           "id": "overlay_worn_fsurvivor_suit",
@@ -7348,6 +7370,12 @@
         },
         {
           "id": "wetsuit_hood",
+          "fg": 951,
+          "bg": 957,
+          "rotates": false
+        },
+        {
+          "id": "nomex_hood",
           "fg": 951,
           "bg": 957,
           "rotates": false
@@ -9718,6 +9746,12 @@
         {
           "id": "scar_l",
           "fg": 2192,
+          "bg": 957,
+          "rotates": false
+        },
+        {
+          "id": "scrambled_eggs",
+          "fg": 1326,
           "bg": 957,
           "rotates": false
         },
@@ -48009,16 +48043,6 @@
 				
 		{ "id": "overlay_female_mutation_VISCOUS", "fg": 10112, "rotates": false },
 		{ "id": "overlay_male_mutation_VISCOUS", "fg": 10113, "rotates": false },
-		
-		{ "id": "overlay_mutation_DEBUG_NODMG", "fg": 10116, "rotates": false },
-		{ "id": "overlay_mutation_DEBUG_NIGHTVISION", "fg": 10117, "rotates": false },
-		{ "id": "overlay_female_mutation_DEBUG_CLOAK", "fg": 10118, "rotates": false },
-		{ "id": "overlay_male_mutation_DEBUG_CLOAK", "fg": 10119, "rotates": false },
-		{ "id": "overlay_female_mutation_DEBUG_LS", "fg": 10120, "rotates": false },
-		{ "id": "overlay_male_mutation_DEBUG_LS", "fg": 10121, "rotates": false },
-		{ "id": "overlay_female_mutation_DEBUG_NOSCENT", "fg": 10122, "rotates": false },
-		{ "id": "overlay_male_mutation_DEBUG_NOSCENT", "fg": 10123, "rotates": false },
-		{ "id": "overlay_mutation_DEBUG_SILENT", "fg": 10124, "rotates": false },
 
 		{ "id": "overlay_female_mutation_PLANTSKIN", "fg": 10038, "rotates": false },
 		
@@ -60001,19 +60025,7 @@
           "fg": 23653,
 		  "bg": 0,
           "rotates": false
-        },			
-		{
-          "id": ["t_hydrop_potato_harvested"],
-          "fg": 23654,
-		  "bg": 0,
-          "rotates": false
-        },	
-		{
-          "id": ["t_hydrop_potato"],
-          "fg": 23655,
-		  "bg": 0,
-          "rotates": false
-        },	
+        },		
 		{
           "id": ["t_hydrop_weed_harvested"],
           "fg": 23656,
@@ -60025,125 +60037,20 @@
           "fg": 23657,
 		  "bg": 0,
           "rotates": false
-        },	
-		{
-          "id": ["cattail_jelly"],
-          "fg": 23658,
-		  "bg": 0,
-          "rotates": false
-        },
-				{
-          "id": ["f_glass_cabinet"],
-          "fg": 23659,
-		  "bg": 0,
-          "rotates": false
-        },
-		{
-          "id": ["f_utility_shelf"],
-          "fg": 23660,
-		  "bg": 0,
-          "rotates": false
-        },
-				{
-          "id": ["f_drill_press"],
-          "fg": 23661,
-		  "bg": 0,
-          "rotates": false
-        },
-		{
-          "id": ["f_heavy_lathe"],
-          "fg": 23662,
-		  "bg": 0,
-          "rotates": false
-        },
-				{
-          "id": ["f_hydralic_press"],
-          "fg": 23663,
-		  "bg": 0,
-          "rotates": false
-        },	
-		{
-          "id": ["f_filling_cabinet"],
-          "fg": 23664,
-		  "bg": 0,
-          "rotates": false
         },		
 		{
-          "id": ["f_floor_lamp"],
-          "fg": 23665,
+          "id": ["t_hydrop_potato_harvested"],
+          "fg": 23654,
 		  "bg": 0,
-          "rotates": false
-        },
-				{
-          "id": ["gp_pot"],
-          "fg": 23666,
-		  "bg": 0,
-          "rotates": false
-        },
-						{
-          "id": ["gp_barley"],
-          "fg": 23667,
-		  "bg": 0,
-          "rotates": false
-        },
-		{
-          "id": ["gp_barley_ready"],
-          "fg": 23668,
-		  "bg": 0,
-          "rotates": false
-        },
-		{
-          "id": ["gp_broccoli"],
-          "fg": 23669,
-		  "bg": 0,
-          "rotates": false
-        },
-		{
-          "id": ["gp_broccoli_ready"],
-          "fg": 23670,
-		  "bg": 0,
-          "rotates": false
-        },
-		        {
-          "id": "scrambled_eggs",
-          "fg": 23671,
-          "bg": 0,
-          "rotates": false
-        },
-        {
-          "id": "nomex_suit",
-          "fg": 23672
-        },
-		{
-          "id": "overlay_female_worn_nomex_suit",
-          "fg": 23673,
           "rotates": false
         },	
 		{
-          "id": "overlay_male_worn_nomex_suit",
-          "fg": 23674,
+          "id": ["t_hydrop_potato"],
+          "fg": 23655,
+		  "bg": 0,
           "rotates": false
         },
-		        {
-          "id": "nomex_socks",
-          "fg": 23675
-        },
-		        {
-          "id": "overlay_worn_nomex_socks",
-          "fg": 23676,
-          "rotates": false
-        },
-		        {
-          "id": "nomex_hood",
-          "fg": 23677,
-          "bg": 0,
-          "rotates": false
-        },
-		{
-          "id": "overlay_worn_nomex_hood",
-          "fg": 23678,
-          "rotates": false
-        },
+		
 		{
           "id": "atlatl",
           "fg": 1986,
