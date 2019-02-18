@@ -30,6 +30,17 @@
 		  "fg": 525,
 		  "rotates": false
 		},
+        {
+          "id": "helmet_silversteel",
+          "fg": 431,
+          "bg": 957,
+          "rotates": false
+        },
+        {
+          "id": "overlay_worn_helmet_silversteel",
+          "fg": 647,
+          "rotates": false
+        },
 		{
 		  "id": "alinor_pack",
 		  "fg": 274,
