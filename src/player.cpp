@@ -422,6 +422,7 @@ static const trait_id trait_WHISKERS( "WHISKERS" );
 static const trait_id trait_WHISKERS_RAT( "WHISKERS_RAT" );
 static const trait_id trait_WINGS_BUTTERFLY( "WINGS_BUTTERFLY" );
 static const trait_id trait_WOOLALLERGY( "WOOLALLERGY" );
+static const trait_id trait_ELFA_FNV( "ELFA_FNV" );
 
 static const itype_id OPTICAL_CLOAK_ITEM_ID( "optical_cloak" );
 
@@ -10403,6 +10404,10 @@ std::string player::is_snuggling() const
 // 11.0 is zero light or blindness
 float player::fine_detail_vision_mod() const
 {
+    //00_MD -- Modding Fey Nightsight (ELFA_FNV) to allow reading/crafting in darkness. 
+	if( has_trait( trait_ELFA_FNV ) ) {
+        return 1.0;
+    }
     // PER_SLIME_OK implies you can get enough eyes around the bile
     // that you can generally see.  There still will be the haze, but
     // it's annoying rather than limiting.

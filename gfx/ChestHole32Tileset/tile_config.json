@@ -9,6 +9,51 @@
     {
       "file": "tiles.png",
       "tiles": [
+		{
+		  "id": "longsword_silversteel",
+          "fg": 2318,
+          "bg": 632,
+		  "rotates": false
+		},
+        {
+          "id": "overlay_wielded_longsword_silversteel",
+          "fg": 1311,
+          "rotates": false
+        },
+		{
+		  "id": "armor_silversteel",
+          "fg": 247,
+          "bg": 632,
+		  "rotates": false
+		},
+        {
+          "id": "overlay_wielded_armor_silversteel",
+          "fg": 247,
+          "bg": 632,
+          "rotates": false
+        },
+		{
+		  "id": "overlay_worn_armor_silversteel",
+          "fg": 438,
+		  "rotates": false
+		},
+		{
+		  "id": "alinor_pack",
+          "fg": 2876,
+          "bg": 632,
+		  "rotates": false
+		},
+        {
+          "id": "overlay_wielded_alinor_pack",
+          "fg": 2876,
+          "bg": 632,
+          "rotates": false
+        },
+		{
+		  "id": "overlay_worn_alinor_pack",
+          "fg": 439,
+		  "rotates": false
+		},
         {
           "id": "overlay_wielded_10mm",
           "fg": 1,

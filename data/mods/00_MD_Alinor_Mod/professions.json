@@ -1,0 +1,40 @@
+[
+	{
+		"type": "profession",
+		"ident": "super_elf",
+		"name": "Super-Elf",
+		"description": "You have mutated into a super-elf, though you seem to have lost your memory.",
+		"points": 0,
+		"items": 
+		{
+			"both": 
+			[
+				"socks",
+				"under_armor",
+				"pants_cargo",
+				"leather_belt",
+				"tshirt",
+				"boots_combat",
+				"gloves_work",
+				"glasses_bal",
+				"backpack",
+				"pockknife",
+				"cell_phone",
+				"multitool",
+				"flashlight",
+				"lighter",
+				"water_clean"
+			],
+            "male": 
+			[
+                "boxer_briefs"
+            ],
+            "female": 
+			[
+                "bra",
+                "boy_shorts"
+            ]
+		},
+		"traits": ["DEBUG_NOTEMP", "EASYSLEEPER", "NONADDICTIVE", "ANIMALEMPATH", "DEFT", "DISIMMUNE", "REGEN", "FASTLEARNER", "FASTREADER", "LIGHTSTEP", "FLEET2", "GOODHEARING", "GOODMEMORY", "GOURMAND", "INCONSPICUOUS", "GOODCARDIO", "INFRESIST", "LIGHTEATER", "BLADESONG", "MASOCHIST", "ELFAEYES", "ELFA_FNV", "OPTIMISTIC", "OUTDOORSMAN", "PACKMULE", "PAINRESIST", "PAINREC3", "PARKOUR", "POISRESIST", "BEAUTIFUL3", "PSYCHOPATH", "QUICK", "ROBUST", "EAGLEEYED", "SELFAWARE", "LIAR", "SPIRITUAL", "STRONGBACK", "STRONGSTOMACH", "STYLISH", "TOLERANCE", "THICKSKIN", "TOUGH", "TOUGH_FEET", "WEAKSCENT", "PLANTSKIN", "BARK", "LEAVES", "PARAIMMUNE", "ELFA_EARS", "STR_UP_3", "DEX_UP_4", "INT_UP_3", "PER_UP_3", "THRESH_ELFA", "WAKEFUL3"]
+	}
+]

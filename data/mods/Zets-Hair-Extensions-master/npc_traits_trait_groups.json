@@ -1,0 +1,11 @@
+[
+  {
+    "//": "This group picks out several negative and positive traits",
+    "type": "trait_group",
+    "id": "NPC_starting_traits",
+    "subtype": "collection",
+    "traits": [
+      { "group": "basicFeatures", "prob": 100 }
+    ]
+  }
+]

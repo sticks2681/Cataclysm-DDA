@@ -1,0 +1,76 @@
+[
+	{
+        "type" : "martial_art",
+        "id" : "style_bladesong",
+        "name" : "Bladesong",
+        "description": "Dedicated elf warriors take their craft seriously enough to have created a uniquely elven fighting style. Unlike the martial arts of other races, the elven fighting style, also known as the bladesong, emphasizes beauty and economy of movement over sheer destructive power. However, the elven bladesong is deceptively dangerous, for all its seeming gentleness and apparent grace.", 
+        "arm_block" : 99,
+        "leg_block" : 99,
+        "static_buffs" : 
+		[
+			{
+                "id" : "bladesong",
+                "name" : "Bladesong",
+                "description" : "Avoid incoming attacks",
+                "melee_allowed" : true,
+                "quiet" : true,
+				"bonus_blocks" : 100,
+                "bonus_dodges" : 100,
+                "block_dex" : 0.25,
+                "block_int" : 0.25,
+                "dodge_dex" : 0.25,
+                "dodge_int" : 0.25
+            }
+        ],
+        "techniques" : 
+		[
+            "tec_bladesong_rapid",
+			"tec_break",
+            "tec_bladesong_counter",
+			"tec_feint"
+        ]
+    },
+	{
+        "type" : "technique",
+        "id" : "tec_bladesong_counter",
+        "name" : "Counterattack",
+        "min_melee" : 0,
+        "melee_allowed" : true,
+        "block_counter": true,
+        "dodge_counter": true,
+        "speed_mult" : 0.75,
+        "messages" : 
+		[
+            "You counter-attack %s",
+            "<npcname> counter-attacks %s"
+        ]
+    },
+	{
+        "type" : "technique",
+        "id" : "tec_bladesong_rapid",
+        "name" : "Rapid Strike",
+        "min_melee" : 0,
+        "melee_allowed" : true,
+        "speed_mult" : 0.5,
+        "bash_mult" : 0.66,
+        "cut_mult" : 0.66,
+        "messages" : [
+            "You quickly strike %s",
+            "<npcname> quickly strikes %s"
+        ]
+    },
+	{
+        "type" : "technique",
+        "id" : "md_vorpal",
+        "name" : "Vorpal",
+        "min_unarmed" : 0,
+        "melee_allowed" : true,
+        "cut_mult" : 99,
+        "crit_tec" : true,
+        "weighting" : -250,
+        "messages" : [
+            "You behead %s",
+            "<npcname> beheads %s"
+        ]
+    }
+]
