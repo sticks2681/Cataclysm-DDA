@@ -7,7 +7,8 @@
 		"points": 0,
 		"CBMs": 
 		[
-			"bio_ears"
+			"bio_ears",
+			"bio_tools"
 		],
 		"skills": 
 		[
@@ -32,7 +33,7 @@
 		],
 		"items": 
 		{
-			"both": [ "holy_symbol", "loincloth", "armor_silversteel", "helmet_silversteel", "alinor_pack", "longsword_silversteel" ],
+			"both": [ "holy_symbol", "loincloth", "armor_silversteel", "helmet_silversteel", "alinor_pack", "longsword_silversteel", "00_MD_forge", "00_MD_swage", "00_MD_crucible", "00_MD_soldering_iron", "00_MD_survivor_mess_kit", "tongs" ],
 			"female": [ "chestwrap" ]
 		},
 		"traits": [ "DEBUG_NOTEMP", "DEBUG_LS", "EASYSLEEPER", "NONADDICTIVE", "ANIMALEMPATH", "DEFT", "DISIMMUNE", "REGEN", "FASTLEARNER", "FASTREADER", "LIGHTSTEP", "FLEET2", "GOODHEARING", "GOODMEMORY", "GOURMAND", "ADRENALINE", "INCONSPICUOUS", "GOODCARDIO", "INFRESIST", "LIGHTEATER", "BLADESONG", "MASOCHIST", "ELFAEYES", "ELFA_FNV", "OPTIMISTIC", "OUTDOORSMAN", "PACKMULE", "PAINRESIST", "PAINREC3", "PARKOUR", "POISRESIST", "BEAUTIFUL3", "PSYCHOPATH", "QUICK", "ROBUST", "EAGLEEYED", "SELFAWARE", "LIAR", "SPIRITUAL", "STRONGBACK", "STRONGSTOMACH", "STYLISH", "TOLERANCE", "THICKSKIN", "TOUGH", "TOUGH_FEET", "WEAKSCENT", "PARAIMMUNE", "ELFA_EARS", "STR_UP_3", "DEX_UP_4", "INT_UP_3", "PER_UP_3", "THRESH_ELFA", "WAKEFUL3", "hair8blond", "SKIN_TAN" ]
