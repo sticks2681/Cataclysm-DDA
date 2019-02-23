@@ -18,7 +18,7 @@
 		"material_thickness": 10,
         "qualities": [ [ "HAMMER", 5 ], [ "PRY", 5 ], [ "SAW_M", 5 ], [ "SAW_W", 5 ], [ "WRENCH", 5 ], [ "AXE", 5 ], [ "SCREW", 5 ], [ "HAMMER_FINE", 5 ], [ "SAW_M_FINE", 5 ], [ "WRENCH_FINE", 5 ], [ "SCREW_FINE", 5 ], [ "DIG", 5 ], [ "DRILL", 5 ], [ "SEW", 5 ], [ "KNIT", 5 ], [ "CUT", 5 ], [ "CUT_FINE", 5 ], [ "CHISEL", 5 ], [ "COOK", 5 ], [ "CHEM", 5 ], [ "BOIL", 5 ], [ "ANVIL", 5 ], [ "CONTAIN", 5 ], [ "WELD", 5 ], [ "BUTCHER", 30 ] ],
         "use_action": [
-			"SEW_ADVANCED", "HAMMER", "CROWBAR", "BOLTCUTTERS", "HEAT_FOOD", "GUN_REPAIR", "HOTPLATE", "HEAT_FOOD", "MISC_REPAIR", "OXYTORCH", "MOP", "PICKAXE", "MAKEMOUND", "JACKHAMMER",
+			"SEW_ADVANCED", "HAMMER", "CROWBAR", "BOLTCUTTERS", "HEAT_FOOD", "GUN_REPAIR", "HOTPLATE", "HEAT_FOOD", "MISC_REPAIR", "OXYTORCH", "MOP", "PICKAXE", "MAKEMOUND", "JACKHAMMER", "WASHCLOTHES",
 			{
 				"type": "holster",
 				"holster_prompt": "Sheath weapon",
@@ -358,6 +358,23 @@
 		"color": "light_blue",
 		"sub": "mold_plastic",
 		"qualities": [ [ "CONTAIN", 1 ] ],
+		"flags": [ "BELT_CLIP" ]
+	},
+	{
+		"type": "AMMO",
+		"id": "00_MD_soap",
+		"category": "chems",
+		"price": 300,
+		"name": "enchanted soap stone",
+		"symbol": "=",
+		"color": "white",
+		"sub": "soap",
+		"description": "A cleansing agent made into bars.",
+		"volume": 1,
+		"weight": 1,
+		"ammo_type": "soap",
+		"count": 1000,
+		"stack_size": 100,
 		"flags": [ "BELT_CLIP" ]
 	}
  ]

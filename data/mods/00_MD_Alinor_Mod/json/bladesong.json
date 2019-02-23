@@ -1,0 +1,70 @@
+[
+  {
+    "type": "martial_art",
+    "id": "style_bladesong",
+    "name": "Bladesong",
+    "description": "Dedicated elf warriors take their craft seriously enough to have created a uniquely elven fighting style. Unlike the martial arts of other races, the elven fighting style, also known as the bladesong, emphasizes beauty and economy of movement over sheer destructive power. However, the elven bladesong is deceptively dangerous, for all its seeming gentleness and apparent grace.",
+    "arm_block": 99,
+    "leg_block": 99,
+    "static_buffs": [
+      {
+        "id": "bladesong",
+        "name": "Bladesong",
+        "description": "Avoid incoming attacks",
+        "melee_allowed": true,
+        "quiet": true,
+        "bonus_blocks": 100,
+        "bonus_dodges": 100,
+        "flat_bonuses": [ [ "block", "dex", 0.5 ], [ "block", "int", 0.5 ], [ "dodge", "dex", 0.5 ], [ "dodge", "int", 0.5 ] ]
+      }
+    ],
+    "techniques": [ "tec_bladesong_rapid", "tec_break", "tec_bladesong_counter", "tec_feint" ],
+    "weapons": [
+      "longsword_silversteel",
+      "katana",
+      "firekatana_off",
+      "firekatana_on",
+      "bokken",
+      "wakizashi",
+      "broadsword",
+      "broadfire_off",
+      "broadfire_on",
+      "rapier",
+      "cavalry_sabre",
+      "fencing_foil",
+      "fencing_sabre",
+      "fencing_epee"
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_bladesong_counter",
+    "name": "Counterattack",
+    "min_melee": 0,
+    "melee_allowed": true,
+    "block_counter": true,
+    "dodge_counter": true,
+    "mult_bonuses": [ [ "movecost", 0.0 ] ],
+    "messages": [ "You counter-attack %s", "<npcname> counter-attacks %s" ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_bladesong_rapid",
+    "name": "Rapid Strike",
+    "min_melee": 0,
+    "melee_allowed": true,
+    "mult_bonuses": [ [ "movecost", 0.5 ], [ "damage", "bash", 0.75 ], [ "damage", "cut", 0.75 ], [ "damage", "stab", 0.75 ] ],
+    "messages": [ "You quickly strike %s", "<npcname> quickly strikes %s" ]
+  },
+  {
+    "type": "technique",
+    "id": "md_vorpal",
+    "name": "Vorpal",
+    "min_melee": 0,
+    "melee_allowed": true,
+    "mult_bonuses": [ [ "damage", "cut", 99 ] ],
+    "crit_tec": true,
+    "weighting": -250,
+    "messages": [ "You behead %s", "<npcname> beheads %s" ]
+  }
+]

@@ -697,7 +697,7 @@ void butchery_drops_harvest( item *corpse_item, const mtype &mt, player &p, cons
                                      _( "You suspect there might be bionics implanted in this corpse, that careful dissection might reveal." ) );
                 continue;
             }
-            if( action == BUTCHER || action == BUTCHER_FULL ) {
+            if( action == BUTCHER_FULL ) {
                 switch( rng( 1, 3 ) ) {
                     case 1:
                         p.add_msg_if_player( m_bad,
@@ -715,7 +715,7 @@ void butchery_drops_harvest( item *corpse_item, const mtype &mt, player &p, cons
                 continue;
             }
         }
-        if( action == DISSECT ) {
+        if( action == DISSECT || action == BUTCHER ) {
             if( entry.type == "bionic" ) {
                 butcher_cbm_item( entry.drop, p.pos(), bday, roll_butchery() );
             } else if( entry.type == "bionic_group" ) {

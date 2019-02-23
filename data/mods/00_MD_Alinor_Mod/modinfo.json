@@ -1,30 +1,64 @@
 [
-	{
-	   "type": "MOD_INFO",
-	   "mod-type": "SUPPLEMENTAL",
-	   "ident": "Alinor_Mod",
-	   "name": "Alinor Mod",
-	   "description": "Adds two scenarios, along with professions and several items to go along with them.",
-	   "path": ""
-	},
-	{
-		"type": "scenario",
-		"ident": "Alinor_Mutated",
-		"name": "Alinor - Mutated",
-		"points" : 0,
-		"description": "You have mutated into a super-elf, though you seem to have lost your memory.",
-		"start_name": "Anywhere",
-		"allowed_locs" : ["shelter", "forest", "field", "cabin", "lmoe", "house", "s_grocery", "s_gun", "s_garage", "pawn", "bank", "mil_surplus", "furniture", "s_library", "s_bookstore", "boarded_house"],
-		"professions" : ["super_elf"]
-	},
-	{
-		"type": "scenario",
-		"ident": "Alinor_Time",
-		"name": "Alinor - Plane Shift",
-		"points" : 0,
-		"description": "You have traveled through time and space to combat the cataclysm on this world.",
-		"start_name": "Forest",
-		"allowed_locs" : ["forest", "shelter", "field", "cabin", "lmoe", "house", "s_grocery", "s_gun", "s_garage", "pawn", "bank", "mil_surplus", "furniture", "s_library", "s_bookstore", "boarded_house"],
-		"professions" : ["eldritch_knight"]
-	}
+  {
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "Alinor_Mod",
+    "name": "Alinor Mod",
+    "description": "Adds two scenarios, along with professions and several items to go along with them.",
+    "path": ""
+  },
+  {
+    "type": "scenario",
+    "ident": "Alinor_Mutated",
+    "name": "Alinor - Mutated",
+    "points": 0,
+    "description": "You have mutated into a super-elf, though you seem to have lost your memory.",
+    "start_name": "Anywhere",
+    "allowed_locs": [
+      "shelter",
+      "forest",
+      "field",
+      "cabin",
+      "lmoe",
+      "house",
+      "s_grocery",
+      "s_gun",
+      "s_garage",
+      "pawn",
+      "bank",
+      "mil_surplus",
+      "furniture",
+      "s_library",
+      "s_bookstore",
+      "boarded_house"
+    ],
+    "professions": [ "super_elf" ]
+  },
+  {
+    "type": "scenario",
+    "ident": "Alinor_Time",
+    "name": "Alinor - Plane Shift",
+    "points": 0,
+    "description": "You have traveled through time and space to combat the cataclysm on this world.",
+    "start_name": "Forest",
+    "allowed_locs": [
+      "forest",
+      "shelter",
+      "field",
+      "cabin",
+      "lmoe",
+      "house",
+      "s_grocery",
+      "s_gun",
+      "s_garage",
+      "pawn",
+      "bank",
+      "mil_surplus",
+      "furniture",
+      "s_library",
+      "s_bookstore",
+      "boarded_house"
+    ],
+    "professions": [ "eldritch_knight" ]
+  }
 ]

@@ -609,6 +609,7 @@ void activity_handlers::washing_finish( player_activity *act, player *p )
         act->set_to_null();
         return;
     } else if( !crafting_inv.has_charges( "soap", required.cleanser ) &&
+               !crafting_inv.has_charges( "00_MD_soap", required.cleanser ) &&
                !crafting_inv.has_charges( "detergent", required.cleanser ) ) {
         p->add_msg_if_player( _( "You need %1$i charges of cleansing agent to wash these items." ),
                               required.cleanser );
@@ -629,6 +630,7 @@ void activity_handlers::washing_finish( player_activity *act, player *p )
 
     std::vector<item_comp> comps1;
     comps1.push_back( item_comp( "soap", required.cleanser ) );
+    comps1.push_back( item_comp( "00_MD_soap", required.cleanser ) );
     comps1.push_back( item_comp( "detergent", required.cleanser ) );
     p->consume_items( comps1 );
 
