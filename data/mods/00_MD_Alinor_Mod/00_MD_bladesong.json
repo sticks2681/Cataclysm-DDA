@@ -1,5 +1,15 @@
 [
   {
+    "type": "mutation",
+    "id": "BLADESONG",
+    "name": "Bladesong",
+    "points": 0,
+    "description": "You are skilled at Bladesong.",
+    "valid": false,
+    "initial_ma_styles": [ "style_bladesong" ],
+    "purifiable": false
+  },
+  {
     "type": "martial_art",
     "id": "style_bladesong",
     "name": "Bladesong",

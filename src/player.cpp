@@ -10404,7 +10404,7 @@ std::string player::is_snuggling() const
 // 11.0 is zero light or blindness
 float player::fine_detail_vision_mod() const
 {
-    //00_MD -- Modding Fey Nightsight (ELFA_FNV) to allow reading/crafting in darkness. 
+    //00_MD -- Modding Elf Nightvision to allow reading/crafting in darkness. 
 	if( has_trait( trait_ELFA_FNV ) ) {
         return 1.0;
     }
