@@ -423,6 +423,7 @@ static const trait_id trait_WHISKERS_RAT( "WHISKERS_RAT" );
 static const trait_id trait_WINGS_BUTTERFLY( "WINGS_BUTTERFLY" );
 static const trait_id trait_WOOLALLERGY( "WOOLALLERGY" );
 static const trait_id trait_ELFA_FNV( "ELFA_FNV" );
+static const trait_id trait_PERFECTMEMORY( "PERFECTMEMORY" );
 
 static const itype_id OPTICAL_CLOAK_ITEM_ID( "optical_cloak" );
 
@@ -3082,6 +3083,10 @@ int player::rust_rate(bool return_stat_effect) const
 
     if (has_trait( trait_GOODMEMORY )) {
         ret *= .66;
+    }
+
+    if (has_trait( trait_PERFECTMEMORY )) {
+        ret *= 0;
     }
 
     if (ret < 0) {
@@ -11831,6 +11836,8 @@ size_t player::max_memorized_tiles() const
             current_map_memory_capacity = SEEX * SEEY * 200; // 50 overmap tiles
         } else if( has_trait( trait_GOODMEMORY ) ) {
             current_map_memory_capacity = SEEX * SEEY * 800; // 200 overmap tiles
+        } else if( has_trait( trait_PERFECTMEMORY ) ) {
+            current_map_memory_capacity = SEEX * SEEY * 20000; // 5000 overmap tiles
         } else {
             current_map_memory_capacity = SEEX * SEEY * 400; // 100 overmap tiles
         }

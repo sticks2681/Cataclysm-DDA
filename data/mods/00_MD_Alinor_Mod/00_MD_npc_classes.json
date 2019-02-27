@@ -35,6 +35,8 @@
     "weapon_override": "NC_ALINOR_wield",
     "//": "This is a unique NPC who doesn't get randomly selected background traits",
     "traits": [
+      [ "BLADESONG", 100 ],
+      [ "PERFECTMEMORY", 100 ],
       [ "DEBUG_NIGHTVISION", 100 ],
       [ "DEBUG_LS", 100 ],
       [ "DEBUG_NOTEMP", 100 ],
@@ -56,7 +58,6 @@
       [ "GOODCARDIO", 100 ],
       [ "INFRESIST", 100 ],
       [ "LIGHTEATER", 100 ],
-      [ "BLADESONG", 100 ],
       [ "MASOCHIST", 100 ],
       [ "ELFAEYES", 100 ],
       [ "OPTIMISTIC", 100 ],

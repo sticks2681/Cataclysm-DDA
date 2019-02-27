@@ -1,5 +1,15 @@
 [
   {
+	"type" : "mutation",
+	"id" : "PERFECTMEMORY",
+	"name" : "Perfect Memory",
+	"points" : 0,
+	"description" : "You have a near-perfect memory, and find it easy to remember things.  Your skills will erode much slower than usual, and you can remember a great deal more terrain.",
+	"valid" : false,
+    "purifiable": false,
+	"cancels" : ["FORGETFUL", "GOODMEMORY"]
+  },
+  {
     "type": "mutation",
     "id": "BLADESONG",
     "name": "Bladesong",

@@ -691,31 +691,31 @@ void butchery_drops_harvest( item *corpse_item, const mtype &mt, player &p, cons
         }
 
         // BIONIC handling - no code for DISSECT to let the bionic drop fall through
-        if( entry.type == "bionic" || entry.type == "bionic_group" ) {
-            if( action == F_DRESS ) {
-                p.add_msg_if_player( m_bad,
-                                     _( "You suspect there might be bionics implanted in this corpse, that careful dissection might reveal." ) );
-                continue;
-            }
-            if( action == BUTCHER_FULL ) {
-                switch( rng( 1, 3 ) ) {
-                    case 1:
-                        p.add_msg_if_player( m_bad,
-                                             _( "Your butchering tool encounters something implanted in this corpse, but your rough cuts destroy it." ) );
-                        break;
-                    case 2:
-                        p.add_msg_if_player( m_bad,
-                                             _( "You find traces of implants in the body, but you care only for the flesh." ) );
-                        break;
-                    case 3:
-                        p.add_msg_if_player( m_bad,
-                                             _( "You found some bionics in the body, but harvesting them would require more surgical approach." ) );
-                        break;
-                }
-                continue;
-            }
-        }
-        if( action == DISSECT || action == BUTCHER ) {
+        //if( entry.type == "bionic" || entry.type == "bionic_group" ) {
+        //    if( action == F_DRESS ) {
+        //        p.add_msg_if_player( m_bad,
+        //                             _( "You suspect there might be bionics implanted in this corpse, that careful dissection might reveal." ) );
+        //        continue;
+        //    }
+        //    if( action == BUTCHER || action == BUTCHER_FULL ) {
+        //        switch( rng( 1, 3 ) ) {
+        //            case 1:
+        //                p.add_msg_if_player( m_bad,
+        //                                     _( "Your butchering tool encounters something implanted in this corpse, but your rough cuts destroy it." ) );
+        //                break;
+        //            case 2:
+        //                p.add_msg_if_player( m_bad,
+        //                                     _( "You find traces of implants in the body, but you care only for the flesh." ) );
+        //                break;
+        //            case 3:
+        //                p.add_msg_if_player( m_bad,
+        //                                     _( "You found some bionics in the body, but harvesting them would require more surgical approach." ) );
+        //                break;
+        //        }
+        //        continue;
+        //    }
+        //}
+        if( action == DISSECT ) {
             if( entry.type == "bionic" ) {
                 butcher_cbm_item( entry.drop, p.pos(), bday, roll_butchery() );
             } else if( entry.type == "bionic_group" ) {
@@ -734,16 +734,34 @@ void butchery_drops_harvest( item *corpse_item, const mtype &mt, player &p, cons
         }
 
         // QUICK BUTCHERY
-        if( action == BUTCHER ) {
-            if( entry.type == "flesh" ) {
+        if( action == BUTCHER ) 
+		{
+            if( entry.type == "flesh" ) 
+			{
                 roll = roll / 4;
-            } else if( entry.type == "bone" ) {
+            } 
+			else if( entry.type == "bone" ) 
+			{
                 roll /= 2;
-            } else if( corpse_item->get_mtype()->size >= MS_MEDIUM && ( entry.type == "skin" ) ) {
+            } 
+			else if( corpse_item->get_mtype()->size >= MS_MEDIUM && ( entry.type == "skin" ) ) 
+			{
                 roll /= 2;
-            } else if( entry.type == "offal" ) {
+            } 
+			else if( entry.type == "offal" ) 
+			{
                 roll /= 5;
-            } else {
+            } 
+			else if( entry.type == "bionic" ) 
+			{
+                butcher_cbm_item( entry.drop, p.pos(), bday, roll_butchery() );
+            } 
+			else if( entry.type == "bionic_group" ) 
+			{
+                butcher_cbm_group( entry.drop, p.pos(), bday, roll_butchery() );
+            } 
+			else 
+			{
                 continue;
             }
         }

@@ -126,7 +126,7 @@
     "symbol": "/",
     "color": "light_gray",
     "techniques": [ "WBLOCK_2", "md_vorpal" ],
-    "flags": [ "SLICE", "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NON_STUCK", "NONCONDUCTIVE", "DIAMOND" ]
+    "flags": [ "SLICE", "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NON_STUCK", "NONCONDUCTIVE" ]
   },
   {
     "id": "armor_silversteel",
@@ -272,7 +272,7 @@
   },
   {
     "id": "scar_ssr",
-    "copy-from": "rifle_auto",
+    "copy-from": "rifle_base",
     "looks_like": "scar_h",
     "type": "GUN",
     "name": "FN SCAR SSR",
@@ -321,6 +321,7 @@
   },
   {
     "id": "ssr_barrel",
+    "copy-from": "lead_barrel_big",
     "type": "GUNMOD",
     "name": "SCAR SSR barrel",
     "description": "A 20-inch, cold hammer-forged, chrome-lined, free-floating barrel standard in the SCAR SSR platform.",
@@ -339,7 +340,7 @@
   },
   {
     "id": "surefire_suppressor",
-    "copy-from": "rifle_auto",
+    "copy-from": "suppressor",
     "type": "GUNMOD",
     "name": "Surefire SOCOM-RC2 suppressor",
     "description": "The SureFire SOCOM-RC2 Fast Attach suppressor is a compact and lightweight package that provides decibel reduction for even high-intensity magnum calibers.  Constructed from Inconel and Stainless Steel, the SOCOM-RC2 reduces back pressure, and in turn reduces the cyclic rate of the weapon and gas blowback to the shooter. Additionally, the SureFire SOCOM-RC2 eliminiates first-round flash found in some suppressors.",

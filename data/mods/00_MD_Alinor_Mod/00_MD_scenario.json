@@ -32,9 +32,9 @@
     "name": "Alinor - Plane Shift",
     "points": 0,
     "description": "You have traveled through time and space to combat the cataclysm on this world.",
-    "start_name": "Inside a police station.",
+    "start_name": "At an evacuation shelter.",
     "allowed_locs": [
-      "police"
+      "shelter"
     ],
     "professions": [ "eldritch_knight" ]
   },
