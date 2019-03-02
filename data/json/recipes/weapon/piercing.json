@@ -15,8 +15,8 @@
       { "id": "CHISEL", "level": 3 }
     ],
     "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ]
+      [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+      [ [ "crucible", -1 ], ["alinor_pack", -1], [ "crucible_clay", -1 ] ]
     ],
     "components": [
       [ [ "stick_long", 1 ] ],

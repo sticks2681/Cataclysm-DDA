@@ -124,7 +124,7 @@
     "time": 90000,
     "book_learn": [ [ "cookbook", 3 ], [ "family_cookbook", 3 ] ],
     "qualities": [ { "id": "COOK", "level": 3 }, { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 150, "LIST" ] ], [ [ "rock_quern", -1 ], [ "clay_quern", -1 ], [ "food_processor", 20 ] ] ],
+    "tools": [ [ [ "surface_heat", 150, "LIST" ] ], [ [ "rock_quern", -1 ], ["alinor_pack", -1], [ "clay_quern", -1 ], [ "food_processor", 20 ] ] ],
     "components": [
       [ [ "liver", 8 ] ],
       [ [ "fat", 2 ], [ "lard", 2 ] ],

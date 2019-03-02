@@ -163,7 +163,7 @@
     "time": 2000,
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "fire", -1 ] ] ],
+    "tools": [ [ [ "fire", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "stick_long", 1 ], [ "broom", 1 ], [ "pool_cue", 1 ], [ "pointy_stick", 1 ] ],
       [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
@@ -238,7 +238,7 @@
     "time": 5000,
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "fire", -1 ] ] ],
+    "tools": [ [ [ "fire", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "spear_wood", 1 ], [ "pointy_stick", 1 ] ],
       [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
@@ -256,7 +256,7 @@
     "time": 60000,
     "autolearn": true,
     "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "tongs", -1 ] ], [ [ "forge", 50 ], [ "oxy_torch", 10 ] ] ],
+    "tools": [ [ [ "tongs", -1 ], ["alinor_pack", -1] ], [ [ "forge", 50 ], ["alinor_pack", -1], [ "oxy_torch", 10 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "javelin", 1 ] ], [ [ "scrap", 1 ] ] ]
   },
   {
@@ -409,7 +409,7 @@
       { "id": "SAW_M_FINE", "level": 1 },
       { "id": "CHISEL", "level": 3 }
     ],
-    "tools": [ [ [ "swage", -1 ] ], [ [ "tongs", -1 ] ] ],
+    "tools": [ [ [ "swage", -1 ], ["alinor_pack", -1] ], [ [ "tongs", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "sheet_metal_small", 4 ] ],
       [ [ "steel_standard", 1, "LIST" ] ],
@@ -438,7 +438,7 @@
       { "id": "SAW_M_FINE", "level": 1 },
       { "id": "CHISEL", "level": 3 }
     ],
-    "tools": [ [ [ "swage", -1 ] ], [ [ "tongs", -1 ] ] ],
+    "tools": [ [ [ "swage", -1 ], ["alinor_pack", -1] ], [ [ "tongs", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "steel_standard", 2, "LIST" ] ],
       [ [ "plastic_chunk", 10 ] ],
@@ -517,12 +517,12 @@
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "GLARE", "level": 2 } ],
     "tools": [
 	[
-        [ "oxy_torch", 6 ],
+        [ "oxy_torch", 6 ], ["alinor_pack", -1],
         [ "welder", 30 ],
         [ "welder_crude", 45 ],
-        [ "toolset", 45 ],
+        [ "toolset", 45 ], ["alinor_pack", -1],
         [ "small_repairkit", 150 ],
-        [ "large_repairkit", 30 ]
+        [ "large_repairkit", 30 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "shotgun_s", 1 ], [ "pipe_shotgun", 1 ] ], [ [ "pipe", 3 ] ], [ [ "spring", 1 ] ],[ [ "steel_chunk", 3 ], [ "scrap", 9 ] ] ]
@@ -541,12 +541,12 @@
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "GLARE", "level": 2 } ],
     "tools": [
       [
-        [ "oxy_torch", 6 ],
+        [ "oxy_torch", 6 ], ["alinor_pack", -1],
         [ "welder", 30 ],
         [ "welder_crude", 45 ],
-        [ "toolset", 45 ],
+        [ "toolset", 45 ], ["alinor_pack", -1],
         [ "small_repairkit", 150 ],
-        [ "large_repairkit", 30 ]
+        [ "large_repairkit", 30 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "pipe", 1 ] ], [ [ "spring", 1 ] ], [ [ "steel_chunk", 2 ] ], [ [ "scrap", 2 ] ] ]
@@ -565,12 +565,12 @@
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "GLARE", "level": 2 } ],
     "tools": [
       [
-        [ "oxy_torch", 6 ],
+        [ "oxy_torch", 6 ], ["alinor_pack", -1],
         [ "welder", 30 ],
         [ "welder_crude", 45 ],
-        [ "toolset", 45 ],
+        [ "toolset", 45 ], ["alinor_pack", -1],
         [ "small_repairkit", 150 ],
-        [ "large_repairkit", 30 ]
+        [ "large_repairkit", 30 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "pipe", 1 ] ], [ [ "spring", 1 ] ], [ [ "steel_chunk", 2 ] ] , [ [ "scrap", 2 ] ] ]
@@ -588,7 +588,7 @@
     "//": "Three hours to remove the action, preserve the old stock, install the action in the new stock, and prep it for use",
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "mosin91_30_ebr", 1 ] ], [ [ "mn_classic_kit", 1 ] ] ]
   },
   {
@@ -604,7 +604,7 @@
     "//": "Three hours to remove the action, preserve the old stock, install the action in the new stock, and prep it for use",
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "mosin44_ebr", 1 ] ], [ [ "mn_classic_kit", 1 ] ] ]
   },
   {
@@ -620,7 +620,7 @@
     "//": "Three hours to remove the action, preserve the old stock, install the action in the new stock, and prep it for use",
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "mosin91_30", 1 ] ], [ [ "mn_ebr_kit", 1 ] ] ]
   },
   {
@@ -636,7 +636,7 @@
     "//": "Three hours to remove the action, preserve the old stock, install the action in the new stock, and prep it for use",
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "mosin44", 1 ] ], [ [ "mn_ebr_kit", 1 ] ] ]
   },
   {
@@ -652,7 +652,7 @@
     "reversible": true,
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "l_base_223", 1 ] ], [ [ "l_car_223_kit", 1 ] ] ]
   },
   {
@@ -667,7 +667,7 @@
     "reversible": true,
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "l_base_223", 1 ] ], [ [ "l_mbr_223_kit", 1 ] ] ]
   },
   {
@@ -682,7 +682,7 @@
     "reversible": true,
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "l_base_223", 1 ] ], [ [ "l_dsr_223_kit", 1 ] ] ]
   },
   {
@@ -698,7 +698,7 @@
     "reversible": true,
     "autolearn": true,
     "//": "Firearms kits are mandatory by design--you're doing significant modifications to your gun and should use the right gear to sight everything in, etc.",
-    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "l_base_223", 1 ] ], [ [ "l_lmg_223_kit", 1 ] ] ]
   },
   {
@@ -786,7 +786,7 @@
       { "id": "SAW_M_FINE", "level": 1 },
       { "id": "CHISEL", "level": 3 }
     ],
-    "tools": [ [ [ "swage", -1 ] ], [ [ "tongs", -1 ] ] ],
+    "tools": [ [ [ "swage", -1 ], ["alinor_pack", -1] ], [ [ "tongs", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "sheet_metal_small", 4 ] ],
       [ [ "steel_standard", 1, "LIST" ] ],
@@ -895,12 +895,12 @@
     ],
     "tools": [
       [
-        [ "oxy_torch", 7 ],
+        [ "oxy_torch", 7 ], ["alinor_pack", -1],
         [ "welder", 36 ],
         [ "welder_crude", 54 ],
-        [ "toolset", 54 ],
+        [ "toolset", 54 ], ["alinor_pack", -1],
         [ "small_repairkit", 180 ],
-        [ "large_repairkit", 75 ]
+        [ "large_repairkit", 75 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "pipe", 2 ] ], [ [ "nail", 2 ] ], [ [ "spring", 1 ] ], [ [ "scrap", 3 ] ], [ [ "shotgun_d", 1 ] ] ]
@@ -971,12 +971,12 @@
 		],
     "tools": [
 	[
-        [ "oxy_torch", 30 ],
+        [ "oxy_torch", 30 ], ["alinor_pack", -1],
         [ "welder", 150 ],
-        [ "large_repairkit", 75 ],
+        [ "large_repairkit", 75 ], ["alinor_pack", -1],
         [ "small_repairkit", 150 ],
         [ "welder_crude", 225 ],
-        [ "toolset", 225 ]
+        [ "toolset", 225 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "pipe", 3 ] ], [ [ "spring", 2 ] ], [ [ "steel_chunk", 3 ] ], [ [ "2x4", 1 ] ], [ [ "scrap", 3 ] ] ]
@@ -999,12 +999,12 @@
     ],
     "tools": [
       [
-        [ "oxy_torch", 40 ],
+        [ "oxy_torch", 40 ], ["alinor_pack", -1],
         [ "welder", 200 ],
-        [ "large_repairkit", 100 ],
+        [ "large_repairkit", 100 ], ["alinor_pack", -1],
         [ "small_repairkit", 200 ],
         [ "welder_crude", 300 ],
-        [ "toolset", 300 ]
+        [ "toolset", 300 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "pipe", 3 ] ], [ [ "nail", 3 ] ], [ [ "scrap", 3 ] ], [ [ "2x4", 1 ] ] ]
@@ -1155,7 +1155,7 @@
     "reversible": true,
     "book_learn": [ [ "advanced_electronics", 3 ], [ "textbook_electronics", 3 ], [ "textbook_anarch", 4 ] ],
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
-    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "small_repairkit", 10 ], [ "large_repairkit", 5 ] ] ],
+    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "small_repairkit", 10 ], [ "large_repairkit", 5 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "pipe", 1 ] ], [ [ "power_supply", 1 ] ], [ [ "amplifier", 1 ] ], [ [ "scrap", 6 ] ], [ [ "cable", 20 ] ] ]
   },
   {
@@ -1194,7 +1194,7 @@
     "time": 55000,
     "book_learn": [ [ "welding_book", 7 ], [ "recipe_melee", 5 ] ],
     "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "swage", -1 ], [ "tongs", -1 ] ], [ [ "forge", 475 ], [ "oxy_torch", 95 ] ] ],
+    "tools": [ [ [ "swage", -1 ], ["alinor_pack", -1], [ "tongs", -1 ], ["alinor_pack", -1] ], [ [ "forge", 475 ], ["alinor_pack", -1], [ "oxy_torch", 95 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "steel_lump", 3 ], [ "steel_chunk", 12 ], [ "scrap", 36 ] ], [ [ "plastic_chunk", 4 ] ] ]
   },
   {
@@ -1233,7 +1233,7 @@
     "difficulty": 8,
     "time": 60000,
     "autolearn": true,
-    "tools": [ [ [ "large_repairkit", 250 ] ] ],
+    "tools": [ [ [ "large_repairkit", 250 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "scrap", 1 ] ], [ [ "pipe", 2 ] ] ]
   },
   {
@@ -1275,12 +1275,12 @@
     ],
     "tools": [
       [
-        [ "oxy_torch", 3 ],
+        [ "oxy_torch", 3 ], ["alinor_pack", -1],
         [ "welder", 15 ],
         [ "welder_crude", 25 ],
-        [ "toolset", 25 ],
+        [ "toolset", 25 ], ["alinor_pack", -1],
         [ "small_repairkit", 15 ],
-        [ "large_repairkit", 15 ]
+        [ "large_repairkit", 15 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "scrap", 6 ], [ "pipe", 1 ], [ "steel_chunk", 2 ] ], [ [ "plastic_chunk", 3 ] ] ]
@@ -1304,12 +1304,12 @@
     ],
     "tools": [
       [
-        [ "oxy_torch", 3 ],
+        [ "oxy_torch", 3 ], ["alinor_pack", -1],
         [ "welder", 15 ],
         [ "welder_crude", 25 ],
-        [ "toolset", 25 ],
+        [ "toolset", 25 ], ["alinor_pack", -1],
         [ "small_repairkit", 15 ],
-        [ "large_repairkit", 15 ]
+        [ "large_repairkit", 15 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "scrap", 6 ], [ "pipe", 1 ], [ "steel_chunk", 2 ] ], [ [ "spring", 1 ] ], [ [ "plastic_chunk", 3 ] ] ]
@@ -1330,7 +1330,7 @@
       [ "manual_smg", 4 ],
       [ "manual_rifle", 4 ]
     ],
-    "tools": [ [ [ "large_repairkit", 75 ] ], [ [ "swage", -1 ] ] ],
+    "tools": [ [ [ "large_repairkit", 75 ], ["alinor_pack", -1] ], [ [ "swage", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "pipe", 1 ] ] ]
   },
   {
@@ -1352,12 +1352,12 @@
     ],
     "tools": [
       [
-        [ "oxy_torch", 2 ],
+        [ "oxy_torch", 2 ], ["alinor_pack", -1],
         [ "welder", 10 ],
         [ "welder_crude", 20 ],
-        [ "toolset", 20 ],
+        [ "toolset", 20 ], ["alinor_pack", -1],
         [ "small_repairkit", 10 ],
-        [ "large_repairkit", 10 ]
+        [ "large_repairkit", 10 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "scrap", 6 ], [ "pipe", 1 ], [ "steel_chunk", 2 ] ], [ [ "plastic_chunk", 3 ] ] ]
@@ -1381,7 +1381,7 @@
       [ "manual_launcher", 4 ]
     ],
     "qualities": [ { "id": "HAMMER_FINE", "level": 1 }, { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "small_repairkit", 10 ], [ "large_repairkit", 10 ] ] ],
+    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "small_repairkit", 10 ], [ "large_repairkit", 10 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "scrap", 3 ], [ "steel_chunk", 1 ] ], [ [ "plastic_chunk", 2 ] ] ]
   },
   {
@@ -1421,7 +1421,7 @@
     "difficulty": 8,
     "time": 60000,
     "book_learn": [ [ "textbook_mechanics", 4 ], [ "manual_shotgun", 5 ], [ "manual_rifle", 5 ] ],
-    "tools": [ [ [ "large_repairkit", 150 ] ], [ [ "swage", -1 ] ] ],
+    "tools": [ [ [ "large_repairkit", 150 ], ["alinor_pack", -1] ], [ [ "swage", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "pipe", 1 ] ] ]
   },
   {
@@ -1443,7 +1443,7 @@
     ],
     "using": [ [ "soldering_standard", 10 ] ],
     "qualities": [ { "id": "HAMMER_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "tools": [ [ [ "small_repairkit", 10 ], [ "large_repairkit", 10 ] ] ],
+    "tools": [ [ [ "small_repairkit", 10 ], [ "large_repairkit", 10 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "scrap", 1 ] ] ]
   },
   {
@@ -1465,12 +1465,12 @@
     ],
     "tools": [
       [
-        [ "oxy_torch", 3 ],
+        [ "oxy_torch", 3 ], ["alinor_pack", -1],
         [ "welder", 15 ],
         [ "welder_crude", 25 ],
-        [ "toolset", 25 ],
+        [ "toolset", 25 ], ["alinor_pack", -1],
         [ "small_repairkit", 15 ],
-        [ "large_repairkit", 15 ]
+        [ "large_repairkit", 15 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "scrap", 6 ], [ "pipe", 1 ], [ "steel_chunk", 3 ] ], [ [ "plastic_chunk", 3 ] ] ]
@@ -1527,12 +1527,12 @@
     ],
     "tools": [
       [
-        [ "oxy_torch", 3 ],
+        [ "oxy_torch", 3 ], ["alinor_pack", -1],
         [ "welder", 15 ],
         [ "welder_crude", 25 ],
-        [ "toolset", 25 ],
+        [ "toolset", 25 ], ["alinor_pack", -1],
         [ "small_repairkit", 15 ],
-        [ "large_repairkit", 15 ]
+        [ "large_repairkit", 15 ], ["alinor_pack", -1]
       ]
     ],
     "components": [ [ [ "scrap", 6 ], [ "pipe", 1 ], [ "steel_chunk", 2 ] ], [ [ "plastic_chunk", 3 ] ], [ [ "spring", 2 ] ] ]
@@ -1573,14 +1573,14 @@
       "tools": [
         [ [ "ar15", -1 ], [ "h&k416a5", -1 ], [ "m27iar", -1 ], [ "m4a1", -1 ] ],
         [
-          [ "oxy_torch", 4 ],
+          [ "oxy_torch", 4 ], ["alinor_pack", -1],
           [ "welder", 20 ],
           [ "welder_crude", 40 ],
-          [ "toolset", 40 ]
+          [ "toolset", 40 ], ["alinor_pack", -1]
         ],
         [
           [ "small_repairkit", 40 ],
-          [ "large_repairkit", 40 ]
+          [ "large_repairkit", 40 ], ["alinor_pack", -1]
         ]
       ],
       "components": [ [ [ "steel_plate", 1 ], [ "steel_lump", 2 ] ], [ [ "pipe", 1 ], [ "sheet_metal_small", 1 ] ], [ [ "scrap", 1 ] ] ]
@@ -1597,7 +1597,7 @@
     "//": "Simple to manufacture, hence it's not gonna be in published in too much detail in gun-mags.",
     "book_learn": [ [ "manual_rifle", 6 ], [ "textbook_anarch", 3 ] ],
     "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "tools": [ [ [ "ar15", -1 ] ], [ [ "small_repairkit", 40 ], [ "large_repairkit", 40 ] ] ],
+    "tools": [ [ [ "ar15", -1 ] ], [ [ "small_repairkit", 40 ], [ "large_repairkit", 40 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "sheet_metal_small", 2 ] ] ]
   },
   {
@@ -1876,7 +1876,7 @@
       { "id": "WRENCH_FINE", "level": 1 },
       { "id": "GLARE", "level": 2 }
     ],
-    "tools": [ [ [ "oxy_torch", 20 ], [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ] ] ],
+    "tools": [ [ [ "oxy_torch", 20 ], ["alinor_pack", -1], [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "pipe", 1 ] ], [ [ "2x4", 1 ], [ "stick", 1 ] ], [ [ "scrap", 2 ] ] ]
   },
   {
@@ -1895,7 +1895,7 @@
       { "id": "WRENCH_FINE", "level": 1 },
       { "id": "GLARE", "level": 2 }
     ],
-    "tools": [ [ [ "oxy_torch", 60 ], [ "welder", 300 ], [ "welder_crude", 450 ], [ "toolset", 450 ] ] ],
+    "tools": [ [ [ "oxy_torch", 60 ], ["alinor_pack", -1], [ "welder", 300 ], [ "welder_crude", 450 ], [ "toolset", 450 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "cable", 80 ] ],
       [ [ "2x4", 1 ], [ "stick", 1 ] ],
@@ -1996,14 +1996,14 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 300],
-      [ "oxy_torch", 60]
+      ["forge", 300], ["alinor_pack", -1],
+      [ "oxy_torch", 60], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2033,13 +2033,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 200], [ "oxy_torch", 40]
+      ["forge", 200], ["alinor_pack", -1], [ "oxy_torch", 40], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2073,13 +2073,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 200], [ "oxy_torch", 40]
+      ["forge", 200], ["alinor_pack", -1], [ "oxy_torch", 40], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2109,13 +2109,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 300], [ "oxy_torch", 60]
+      ["forge", 300], ["alinor_pack", -1], [ "oxy_torch", 60], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2145,13 +2145,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 300], [ "oxy_torch", 60]
+      ["forge", 300], ["alinor_pack", -1], [ "oxy_torch", 60], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2181,13 +2181,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 200], [ "oxy_torch", 40]
+      ["forge", 200], ["alinor_pack", -1], [ "oxy_torch", 40], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2217,13 +2217,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 400], [ "oxy_torch", 80]
+      ["forge", 400], ["alinor_pack", -1], [ "oxy_torch", 80], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2252,13 +2252,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 200], [ "oxy_torch", 40]
+      ["forge", 200], ["alinor_pack", -1], [ "oxy_torch", 40], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2285,10 +2285,10 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 150], [ "oxy_torch", 30]
+      ["forge", 150], ["alinor_pack", -1], [ "oxy_torch", 30], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2316,7 +2316,7 @@
     {"id":"HAMMER","level":1}
   ], "tools" : [
     [
-      ["mold_plastic", -1] ],
+      ["mold_plastic", -1], ["alinor_pack", -1] ],
     [
       [ "surface_heat", 10, "LIST" ]
     ]
@@ -2345,13 +2345,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 400], [ "oxy_torch", 80]
+      ["forge", 400], ["alinor_pack", -1], [ "oxy_torch", 80], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2380,13 +2380,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 350], [ "oxy_torch", 70]
+      ["forge", 350], ["alinor_pack", -1], [ "oxy_torch", 70], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2416,13 +2416,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 200], [ "oxy_torch", 40]
+      ["forge", 200], ["alinor_pack", -1], [ "oxy_torch", 40], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2488,14 +2488,14 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["crucible", -1],
+      ["crucible", -1], ["alinor_pack", -1],
       ["crucible_clay", -1]
      ],
      [
-      ["forge", 450], [ "oxy_torch", 90]
+      ["forge", 450], ["alinor_pack", -1], [ "oxy_torch", 90], ["alinor_pack", -1]
      ]
     ],
   "components":
@@ -2525,13 +2525,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["forge", 300], [ "oxy_torch", 60]
+      ["forge", 300], ["alinor_pack", -1], [ "oxy_torch", 60], ["alinor_pack", -1]
      ]
     ],
   "components":
@@ -2560,13 +2560,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["forge", 350], [ "oxy_torch", 70]
+      ["forge", 350], ["alinor_pack", -1], [ "oxy_torch", 70], ["alinor_pack", -1]
      ]
     ],
   "components": [
@@ -2614,7 +2614,7 @@
     [
       [ "soldering_standard", 20, "LIST" ],
       [ "small_repairkit", 20 ],
-      [ "large_repairkit", 10 ]
+      [ "large_repairkit", 10 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -2645,7 +2645,7 @@
   "difficulty" : 6,
   "time" : 30000,
   "book_learn": [[ "recipe_melee", 4 ]],
-  "tools" : [ [ ["mold_plastic", -1] ],
+  "tools" : [ [ ["mold_plastic", -1], ["alinor_pack", -1] ],
     [
       [ "surface_heat", 10, "LIST" ]
     ]
@@ -2684,7 +2684,7 @@
   "qualities" : [
     {"id":"SCREW","level":1}
   ], "tools" : [
-     [ ["mold_plastic", -1] ]
+     [ ["mold_plastic", -1], ["alinor_pack", -1] ]
   ],
   "components" : [
      [
@@ -2759,14 +2759,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 300],
-      [ "oxy_torch", 60]
+      ["forge", 300], ["alinor_pack", -1],
+      [ "oxy_torch", 60], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2800,11 +2800,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 425 ],
-      [ "oxy_torch", 85 ]
+      [ "forge", 425 ], ["alinor_pack", -1],
+      [ "oxy_torch", 85 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -2838,14 +2838,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 400],
-      [ "oxy_torch", 80]
+      ["forge", 400], ["alinor_pack", -1],
+      [ "oxy_torch", 80], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2880,14 +2880,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 400],
-      [ "oxy_torch", 80]
+      ["forge", 400], ["alinor_pack", -1],
+      [ "oxy_torch", 80], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2922,14 +2922,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 350],
-      [ "oxy_torch", 70]
+      ["forge", 350], ["alinor_pack", -1],
+      [ "oxy_torch", 70], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -2960,14 +2960,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 450],
-      [ "oxy_torch", 90]
+      ["forge", 450], ["alinor_pack", -1],
+      [ "oxy_torch", 90], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3001,11 +3001,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 425 ],
-      [ "oxy_torch", 85 ]
+      [ "forge", 425 ], ["alinor_pack", -1],
+      [ "oxy_torch", 85 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3039,11 +3039,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 450 ],
-      [ "oxy_torch", 90 ]
+      [ "forge", 450 ], ["alinor_pack", -1],
+      [ "oxy_torch", 90 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3076,11 +3076,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 450 ],
-      [ "oxy_torch", 90 ]
+      [ "forge", 450 ], ["alinor_pack", -1],
+      [ "oxy_torch", 90 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3113,11 +3113,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 450 ],
-      [ "oxy_torch", 90 ]
+      [ "forge", 450 ], ["alinor_pack", -1],
+      [ "oxy_torch", 90 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3151,14 +3151,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 450],
-      [ "oxy_torch", 90]
+      ["forge", 450], ["alinor_pack", -1],
+      [ "oxy_torch", 90], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3228,14 +3228,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 310],
-      [ "oxy_torch", 70]
+      ["forge", 310], ["alinor_pack", -1],
+      [ "oxy_torch", 70], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3270,14 +3270,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 400],
-      [ "oxy_torch", 80]
+      ["forge", 400], ["alinor_pack", -1],
+      [ "oxy_torch", 80], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3312,14 +3312,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 450],
-      [ "oxy_torch", 90]
+      ["forge", 450], ["alinor_pack", -1],
+      [ "oxy_torch", 90], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3354,13 +3354,13 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 500], ["oxy_torch", 100]
+      ["forge", 500], ["alinor_pack", -1], ["oxy_torch", 100], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3395,10 +3395,10 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 200], ["oxy_torch", 40]
+      ["forge", 200], ["alinor_pack", -1], ["oxy_torch", 40], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3433,13 +3433,13 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 300], ["oxy_torch", 60]
+      ["forge", 300], ["alinor_pack", -1], ["oxy_torch", 60], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3474,14 +3474,14 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 350],
-      [ "oxy_torch", 70]
+      ["forge", 350], ["alinor_pack", -1],
+      [ "oxy_torch", 70], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3537,10 +3537,10 @@
   ],
   "tools": [
     [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
     ],
     [
-      ["forge", 150], ["oxy_torch", 30]
+      ["forge", 150], ["alinor_pack", -1], ["oxy_torch", 30], ["alinor_pack", -1]
       ]
     ],
   "components": [
@@ -3567,13 +3567,13 @@
   ],
   "tools": [
       [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
       ],
       [
-      ["forge", 250], ["oxy_torch", 50]
+      ["forge", 250], ["alinor_pack", -1], ["oxy_torch", 50], ["alinor_pack", -1]
       ]
       ],
   "components":
@@ -3774,13 +3774,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["forge", 50], [ "oxy_torch", 10]
+      ["forge", 50], ["alinor_pack", -1], [ "oxy_torch", 10], ["alinor_pack", -1]
      ]
     ],
   "components":
@@ -3805,13 +3805,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["forge", 100], [ "oxy_torch", 20]
+      ["forge", 100], ["alinor_pack", -1], [ "oxy_torch", 20], ["alinor_pack", -1]
      ]
     ],
   "components":
@@ -3837,11 +3837,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ]  ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1]  ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 450 ],
-      [ "oxy_torch", 90 ]
+      [ "forge", 450 ], ["alinor_pack", -1],
+      [ "oxy_torch", 90 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3874,11 +3874,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 350 ],
-      [ "oxy_torch", 70 ]
+      [ "forge", 350 ], ["alinor_pack", -1],
+      [ "oxy_torch", 70 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3910,11 +3910,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 450],
-      [ "oxy_torch", 90]
+      [ "forge", 450], ["alinor_pack", -1],
+      [ "oxy_torch", 90], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3946,11 +3946,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 450 ],
-      [ "oxy_torch", 90 ]
+      [ "forge", 450 ], ["alinor_pack", -1],
+      [ "oxy_torch", 90 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -3983,11 +3983,11 @@
     { "id": "CHISEL", "level": 3 }
   ],
   "tools": [
-    [ [ "tongs", -1 ] ],
-    [ [ "swage", -1 ] ],
+    [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+    [ [ "swage", -1 ], ["alinor_pack", -1] ],
     [
-      [ "forge", 100 ],
-      [ "oxy_torch", 20 ]
+      [ "forge", 100 ], ["alinor_pack", -1],
+      [ "oxy_torch", 20 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -4013,13 +4013,13 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["forge", 100], [ "oxy_torch", 20]
+      ["forge", 100], ["alinor_pack", -1], [ "oxy_torch", 20], ["alinor_pack", -1]
      ]
     ],
   "components": [
@@ -4077,14 +4077,14 @@
     { "id" : "GLARE", "level" : 2 }
   ], "tools": [
     [
-      [ "oxy_torch", 6 ],
+      [ "oxy_torch", 6 ], ["alinor_pack", -1],
       [ "welder", 30 ],
       [ "welder_crude", 45 ],
-      [ "toolset", 45 ]
+      [ "toolset", 45 ], ["alinor_pack", -1]
     ],
     [
       [ "small_repairkit", 150 ],
-      [ "large_repairkit", 30 ]
+      [ "large_repairkit", 30 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -4150,17 +4150,17 @@
   "tools":
     [
       [
-        ["tongs", -1]
+        ["tongs", -1], ["alinor_pack", -1]
       ],
       [
-        ["crucible", -1],
+        ["crucible", -1], ["alinor_pack", -1],
         ["crucible_clay", -1]
       ],
       [
-        ["swage", -1]
+        ["swage", -1], ["alinor_pack", -1]
       ],
       [
-        ["mold_plastic", -1]
+        ["mold_plastic", -1], ["alinor_pack", -1]
       ]
     ],
   "components":
@@ -4228,14 +4228,14 @@
   "tools":
   [
     [
-      ["oxy_torch", 60],
+      ["oxy_torch", 60], ["alinor_pack", -1],
       ["welder", 300],
       ["welder_crude", 450],
-      ["toolset", 450]
+      ["toolset", 450], ["alinor_pack", -1]
     ],
     [
       ["small_repairkit", 150],
-      ["large_repairkit", 30]
+      ["large_repairkit", 30], ["alinor_pack", -1]
     ]
   ], "components":
   [

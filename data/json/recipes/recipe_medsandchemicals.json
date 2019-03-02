@@ -146,7 +146,7 @@
   "autolearn": true,
   "batch_time_factors": [ 67, 5 ],
   "tools": [
-    [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    [ [ "dehydrator", 25 ], ["alinor_pack", -1], [ "char_smoker", 25 ], ["alinor_pack", -1] ]
   ],
   "components": [ [ [ "tobacco_raw", 1 ] ] ]
 },{
@@ -2353,8 +2353,8 @@
     {"id":"CHEM","level":2}
   ], "tools": [
     [
-      [ "hotplate", 50 ],
-      [ "toolset", 50 ]
+      [ "hotplate", 50 ], ["alinor_pack", -1],
+      [ "toolset", 50 ], ["alinor_pack", -1]
     ]
   ],
   "components": [
@@ -2619,8 +2619,8 @@
 ],
 "tools": [
     [
-      [ "hotplate", 50 ],
-      [ "toolset", 50 ]
+      [ "hotplate", 50 ], ["alinor_pack", -1],
+      [ "toolset", 50 ], ["alinor_pack", -1]
     ]
   ],
 "components": [

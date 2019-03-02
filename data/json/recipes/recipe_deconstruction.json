@@ -1013,7 +1013,7 @@
   {
     "result": "felt_patch",
     "type": "uncraft",
-    "time": 6000,
+    "time": 1000,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "yarn", 50 ] ] ]
   },
@@ -1152,7 +1152,7 @@
     "difficulty": 4,
     "time": 750000,
     "qualities": [ { "id": "SAW_M", "level": 1 } ],
-    "tools": [ [ [ "welder", 500 ], [ "toolset", 750 ] ] ],
+    "tools": [ [ [ "welder", 500 ], [ "toolset", 750 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "steel_plate", 10 ] ], [ [ "steel_lump", 70 ] ] ]
   },
   {
@@ -1295,7 +1295,7 @@
     "type": "uncraft",
     "time": 10000,
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "crucible", -1 ], ["alinor_pack", -1], [ "crucible_clay", -1 ] ] ],
     "components": [ [ [ "material_limestone", 10 ] ] ]
   },
   {
@@ -1483,7 +1483,7 @@
     "skills_required": [ "electronics", 5 ],
     "time": 80000,
     "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
-    "tools": [ [ [ "boltcutters", -1 ], [ "toolset", -1 ] ] ],
+    "tools": [ [ [ "boltcutters", -1 ], ["alinor_pack", -1], [ "toolset", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "depowered_armor", 1 ] ],
       [ [ "power_supply", 6 ] ],
@@ -1501,7 +1501,7 @@
     "skills_required": [ "electronics", 4 ],
     "time": 80000,
     "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
-    "tools": [ [ [ "boltcutters", -1 ], [ "toolset", -1 ] ] ],
+    "tools": [ [ [ "boltcutters", -1 ], ["alinor_pack", -1], [ "toolset", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "depowered_helmet", 1 ] ],
       [ [ "power_supply", 1 ] ],
@@ -1554,14 +1554,14 @@
   {
     "result": "rag",
     "type": "uncraft",
-    "time": 60000,
+    "time": 1000,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "thread", 80 ] ] ]
   },
   {
     "result": "stick_fiber",
     "type": "uncraft",
-    "time": 60000,
+    "time": 1000,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "plant_fibre", 80 ] ] ]
   },

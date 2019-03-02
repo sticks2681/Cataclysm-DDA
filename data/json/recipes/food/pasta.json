@@ -174,7 +174,7 @@
     "difficulty": 4,
     "time": 30000,
     "autolearn": true,
-    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ] ] ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "flour", 9 ] ], [ [ "water", 1 ], [ "water_clean", 1 ] ] ]
   },
   {
@@ -186,7 +186,7 @@
     "difficulty": 4,
     "time": 30000,
     "autolearn": true,
-    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ] ] ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "flour", 5 ] ], [ [ "water", 1 ], [ "water_clean", 1 ] ] ]
   },
   {
@@ -198,7 +198,7 @@
     "difficulty": 4,
     "time": 30000,
     "autolearn": true,
-    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ] ] ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "flour", 5 ] ], [ [ "water", 1 ], [ "water_clean", 1 ] ] ]
   },
   {
@@ -210,7 +210,7 @@
     "difficulty": 4,
     "time": 30000,
     "autolearn": true,
-    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ] ] ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ], [ [ "pastaextruder", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "flour", 5 ] ], [ [ "water", 1 ], [ "water_clean", 1 ] ] ]
   },
   {

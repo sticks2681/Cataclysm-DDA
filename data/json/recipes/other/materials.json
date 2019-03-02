@@ -11,7 +11,7 @@
     "reversible": true,
     "autolearn": true,
     "using": [ [ "forging_standard", 1 ] ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "crucible", -1 ], ["alinor_pack", -1], [ "crucible_clay", -1 ] ] ],
     "components": [ [ [ "scrap", 5 ] ] ]
   },
   {
@@ -26,7 +26,7 @@
     "reversible": true,
     "autolearn": true,
     "using": [ [ "forging_standard", 4 ], [ "steel_tiny", 4 ] ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ]
+    "tools": [ [ [ "crucible", -1 ], ["alinor_pack", -1], [ "crucible_clay", -1 ] ] ]
   },
   {
     "result": "tin",

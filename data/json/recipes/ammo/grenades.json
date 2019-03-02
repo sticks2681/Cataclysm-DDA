@@ -13,7 +13,7 @@
     "book_learn": [ [ "manual_launcher", 4 ], [ "manual_shotgun", 6 ] ],
     "charges": 1,
     "using": [ [ "ammo_40mm", 1 ] ],
-    "tools": [ [ [ "press", -1 ] ] ],
+    "tools": [ [ [ "press", -1 ], ["alinor_pack", -1] ] ],
     "components": [ [ [ "gunpowder", 40 ] ], [ [ "combatnail", 25 ] ] ]
   },
   {

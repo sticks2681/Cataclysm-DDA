@@ -15,7 +15,7 @@
       { "id": "SCREW_FINE", "level": 1 }
     ],
     "tools": [
-      [ [ "mold_plastic", -1 ] ],
+      [ [ "mold_plastic", -1 ], ["alinor_pack", -1] ],
       [ [ "surface_heat", 50, "LIST" ] ]
     ],
     "components": [
@@ -42,9 +42,9 @@
       { "id": "CHISEL", "level": 3 }
     ],
     "tools": [
-      [ ["tongs", -1 ] ],
-      [ ["crucible", -1 ], ["crucible_clay", -1] ],
-      [ ["swage", -1 ] ]
+      [ ["tongs", -1 ], ["alinor_pack", -1] ],
+      [ ["crucible", -1 ], ["alinor_pack", -1], ["crucible_clay", -1] ],
+      [ ["swage", -1 ], ["alinor_pack", -1] ]
     ]
   },
   {
@@ -105,8 +105,8 @@
       { "id": "CHISEL", "level": 3 }
     ],
     "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ]
+      [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+      [ [ "crucible", -1 ], ["alinor_pack", -1], [ "crucible_clay", -1 ] ]
     ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ] ]
   },
@@ -164,8 +164,8 @@
     "reversible": true,
     "autolearn": true,
     "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ]
+      [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+      [ [ "crucible", -1 ], ["alinor_pack", -1], [ "crucible_clay", -1 ] ]
     ],
     "using": [ [ "welding_standard", 1 ], [ "forging_standard", 1 ] ],
     "qualities":[

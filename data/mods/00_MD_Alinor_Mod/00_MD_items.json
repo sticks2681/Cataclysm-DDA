@@ -121,12 +121,12 @@
     "price": 250000,
     "to_hit": 5,
     "bashing": 5,
-    "cutting": 40,
+    "cutting": 100,
     "material": "hardsteel",
     "symbol": "/",
     "color": "light_gray",
     "techniques": [ "WBLOCK_2", "md_vorpal" ],
-    "flags": [ "SLICE", "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NON_STUCK", "NONCONDUCTIVE" ]
+    "flags": [ "SLICE", "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NON_STUCK", "NONCONDUCTIVE", "DIAMOND" ]
   },
   {
     "id": "armor_silversteel",

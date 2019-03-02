@@ -10,7 +10,7 @@
     "time": 180000,
     "book_learn": [ [ "tailor_portfolio", 7 ], [ "textbook_tailor", 8 ], [ "textbook_fireman", 6 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "welder", 112 ], [ "welder_crude", 168 ], [ "soldering_iron", 168 ], [ "toolset", 168 ] ] ],
+    "tools": [ [ [ "welder", 112 ], [ "welder_crude", 168 ], [ "soldering_iron", 168 ], ["alinor_pack", -1], [ "toolset", 168 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "cleansuit", 1 ] ],
       [ [ "duct_tape", 600 ] ],
@@ -28,7 +28,7 @@
     "time": 220000,
     "book_learn": [ [ "tailor_portfolio", 7 ], [ "textbook_fireman", 7 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "welder", 112 ], [ "welder_crude", 168 ], [ "soldering_iron", 168 ], [ "toolset", 168 ] ] ],
+    "tools": [ [ [ "welder", 112 ], [ "welder_crude", 168 ], [ "soldering_iron", 168 ], ["alinor_pack", -1], [ "toolset", 168 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "hazmat_suit", 1 ] ],
       [ [ "duct_tape", 800 ] ],
@@ -128,9 +128,9 @@
       { "id": "CHISEL", "level": 3 }
     ],
     "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 400 ], [ "oxy_torch", 80 ] ]
+      [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+      [ [ "swage", -1 ], ["alinor_pack", -1] ],
+      [ [ "forge", 400 ], ["alinor_pack", -1], [ "oxy_torch", 80 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "steel_lump", 20 ], [ "steel_chunk", 80 ] ],
@@ -223,9 +223,9 @@
       { "id": "CHISEL", "level": 3 }
     ],
     "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 450 ], [ "oxy_torch", 90 ] ]
+      [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+      [ [ "swage", -1 ], ["alinor_pack", -1] ],
+      [ [ "forge", 450 ], ["alinor_pack", -1], [ "oxy_torch", 90 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "steel_lump", 30 ] ],
@@ -247,9 +247,9 @@
       { "id": "CHISEL", "level": 3 }
     ],
     "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 450 ], [ "oxy_torch", 90 ] ]
+      [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+      [ [ "swage", -1 ], ["alinor_pack", -1] ],
+      [ [ "forge", 450 ], ["alinor_pack", -1], [ "oxy_torch", 90 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "steel_lump", 16 ], [ "steel_chunk", 64 ] ],
@@ -374,7 +374,7 @@
     "time": 160000,
     "book_learn": [ [ "textbook_fireman", 8 ], [ "tailor_portfolio", 8 ] ],
     "using": [ [ "sewing_standard", 200 ] ],
-    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], ["alinor_pack", -1], [ "toolset", 42 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "nomex", 40 ] ],
       [ [ "kevlar_plate", 8 ] ],
@@ -394,7 +394,7 @@
     "autolearn": true,
     "book_learn": [ [ "tailor_portfolio", 7 ], [ "textbook_fireman", 7 ] ],
     "using": [ [ "sewing_standard", 200 ] ],
-    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], ["alinor_pack", -1], [ "toolset", 42 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 4 ] ],
       [ [ "nomex_suit", 1 ], [ "entry_suit", 1 ], [ "nomex", 20 ] ],
@@ -428,7 +428,7 @@
     "time": 300000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 200 ] ],
-    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], [ "toolset", 84 ] ] ],
+    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], ["alinor_pack", -1], [ "toolset", 84 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 10 ] ],
       [ [ "wetsuit", 1 ], [ "wetsuit_spring", 1 ] ],
@@ -448,7 +448,7 @@
     "time": 360000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 200 ] ],
-    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], [ "toolset", 84 ] ] ],
+    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], ["alinor_pack", -1], [ "toolset", 84 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 20 ] ],
       [ [ "leather", 20 ], [ "tanned_hide", 4 ] ],
@@ -510,7 +510,7 @@
     "time": 180000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 100 ] ],
-    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], ["alinor_pack", -1], [ "toolset", 42 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 30 ] ],
       [ [ "coat_rain", 1 ], [ "jacket_windbreaker", 1 ], [ "jacket_evac", 1 ] ,[ "coat_gut", 1 ] ],
@@ -557,7 +557,7 @@
     "time": 240000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 150 ] ],
-    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], ["alinor_pack", -1], [ "toolset", 42 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 20 ] ],
       [ [ "leather", 20 ], [ "tanned_hide", 4 ] ],
@@ -662,7 +662,7 @@
     "time": 600000,
     "book_learn": [ [ "textbook_tailor", 4 ], [ "manual_tailor", 5 ], [ "tailor_portfolio", 4 ] ],
     "using": [ [ "sewing_standard", 50 ] ],
-    "tools": [ [ [ "soldering_iron", 20 ], [ "welder", 20 ], [ "hotplate", 20 ], [ "toolset", 20 ] ] ],
+    "tools": [ [ [ "soldering_iron", 20 ], ["alinor_pack", -1], [ "welder", 20 ], [ "hotplate", 20 ], ["alinor_pack", -1], [ "toolset", 20 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "neoprene", 12 ] ],
       [ [ "rag", 12 ] ]
@@ -678,7 +678,7 @@
     "time": 450000,
     "book_learn": [ [ "textbook_tailor", 3 ], [ "manual_tailor", 4 ], [ "tailor_portfolio", 3 ] ],
     "using": [ [ "sewing_standard", 40 ] ],
-    "tools": [ [ [ "soldering_iron", 15 ], [ "welder", 15 ], [ "hotplate", 15 ], [ "toolset", 15 ] ] ],
+    "tools": [ [ [ "soldering_iron", 15 ], ["alinor_pack", -1], [ "welder", 15 ], [ "hotplate", 15 ], ["alinor_pack", -1], [ "toolset", 15 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "neoprene", 8 ] ],
       [ [ "rag", 8 ] ]
@@ -707,7 +707,7 @@
     "time": 300000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 200 ] ],
-    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], ["alinor_pack", -1], [ "toolset", 42 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 10 ] ],
       [ [ "leather", 20 ], [ "tanned_hide", 4 ] ],
@@ -729,7 +729,7 @@
     "time": 320000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 200 ] ],
-    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], [ "toolset", 84 ] ] ],
+    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], ["alinor_pack", -1], [ "toolset", 84 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 30 ] ],
       [ [ "leather", 40 ], [ "tanned_hide", 7 ] ],

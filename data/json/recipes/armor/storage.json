@@ -286,7 +286,7 @@
     "using": [ [ "sewing_standard", 25 ] ],
     "tools": [
       [ [ "surface_heat", 5, "LIST" ] ],
-      [ [ "mold_plastic", -1 ] ]
+      [ [ "mold_plastic", -1 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "rag", 20 ] ],
@@ -334,7 +334,7 @@
     "time": 80000,
     "autolearn": true,
     "qualities": [ { "id": "SEW", "level": 1 } ],
-    "tools": [ [ [ "mold_plastic", -1 ] ] ],
+    "tools": [ [ [ "mold_plastic", -1 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 4 ] ],
       [ [ "plastic_chunk", 2 ] ],
@@ -470,7 +470,7 @@
     "using": [ [ "sewing_standard", 15 ] ],
     "tools": [
       [ [ "surface_heat", 5, "LIST" ] ],
-      [ [ "mold_plastic", -1 ] ]
+      [ [ "mold_plastic", -1 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "rag", 10 ] ],

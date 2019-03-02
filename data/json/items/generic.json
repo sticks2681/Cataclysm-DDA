@@ -359,7 +359,8 @@
     "material": "plastic",
     "weight": 18,
     "volume": 0,
-    "to_hit": -3
+    "to_hit": -3,
+    "flags": [ "BELT_CLIP" ]
   },
   {
     "id": "golf_tee",
@@ -2714,7 +2715,8 @@
     "material": "plastic",
     "weight": 6,
     "volume": 0,
-    "to_hit": -3
+    "to_hit": -3,
+    "flags": [ "BELT_CLIP" ]
   },
   {
     "type": "GENERIC",
@@ -2728,7 +2730,8 @@
     "material": "plastic",
     "weight": 6,
     "volume": 0,
-    "to_hit": -3
+    "to_hit": -3,
+    "flags": [ "BELT_CLIP" ]
   },
   {
     "type": "GENERIC",

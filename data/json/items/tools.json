@@ -2368,7 +2368,7 @@
     "charges_per_use": 1,
     "revert_to": "eink_tablet_pc",
     "use_action": "EINKTABLETPC",
-    "flags": [ "WATCH" ]
+    "flags": [ "WATCH", "BELT_CLIP" ]
   },
   {
     "id": "elec_chainsaw_off",
@@ -4934,7 +4934,7 @@
       "cost_scaling": 0.1,
       "move_cost": 1300
     },
-    "flags": [ "STAB" ]
+    "flags": [ "STAB", "BELT_CLIP" ]
   },
   {
     "id": "needle_curved",
@@ -4961,7 +4961,7 @@
       "cost_scaling": 0.1,
       "move_cost": 1200
     },
-    "flags": [ "STAB" ]
+    "flags": [ "STAB", "BELT_CLIP" ]
   },
   {
     "id": "needle_wood",
@@ -4988,7 +4988,7 @@
       "cost_scaling": 0.1,
       "move_cost": 1500
     },
-    "flags": [ "STAB" ]
+    "flags": [ "STAB", "BELT_CLIP" ]
   },
   {
     "id": "nodachi",
@@ -5286,7 +5286,8 @@
     "material": "steel",
     "symbol": ";",
     "color": "light_gray",
-    "use_action": { "type": "picklock", "pick_quality": 5 }
+    "use_action": { "type": "picklock", "pick_quality": 5 },
+    "flags": [ "BELT_CLIP" ]
   },
   {
     "id": "pickles_ferment",
@@ -5582,7 +5583,7 @@
     "container_data": { "contains": 8, "watertight": true },
     "qualities": [ [ "COOK", 3 ], [ "BOIL", 2 ], [ "CONTAIN", 1 ], [ "CHEM", 1 ] ],
     "use_action": "HEAT_FOOD",
-    "flags": [ "ALLOWS_REMOTE_USE" ]
+    "flags": [ "ALLOWS_REMOTE_USE", "BELT_CLIP" ]
   },
   {
     "id": "pot_canning",
@@ -6179,7 +6180,8 @@
       "tool_quality": 0,
       "cost_scaling": 0.1,
       "move_cost": 1000
-    }
+    },
+    "flags": [ "BELT_CLIP" ]
   },
   {
     "id": "shavingkit",
@@ -6850,7 +6852,8 @@
         "move_cost": 800
       },
       "SEW_ADVANCED"
-    ]
+    ],
+    "flags": [ "BELT_CLIP" ]
   },
   {
     "id": "talking_doll",

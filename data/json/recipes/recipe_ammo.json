@@ -14,7 +14,7 @@
     { "id": "SCREW", "level": 1 },
     { "id": "WRENCH", "level": 1 }
   ],
-  "tools": [ [ [ "boltcutters", -1 ], [ "toolset", -1 ] ] ],
+  "tools": [ [ [ "boltcutters", -1 ], ["alinor_pack", -1], [ "toolset", -1 ], ["alinor_pack", -1] ] ],
   "components": [
     [ [ "mininuke", 1 ] ],
     [ [ "cable", 2 ] ],
@@ -100,14 +100,14 @@
   "book_learn": [[ "glassblowing_book", 5 ]],
   "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["crucible", -1],
+      ["crucible", -1], ["alinor_pack", -1],
       ["crucible_clay", -1]
      ],
      [
-      ["forge", 25]
+      ["forge", 25], ["alinor_pack", -1]
      ]
     ],
   "components":
@@ -130,14 +130,14 @@
     "book_learn": [[ "textbook_fabrication", 1 ]],
     "tools": [
     [
-      [ "press", -1 ]
+      [ "press", -1 ], ["alinor_pack", -1]
     ],
     [
-      ["crucible", -1],
+      ["crucible", -1], ["alinor_pack", -1],
       ["crucible_clay", -1]
     ],
     [
-      ["forge", 100], [ "oxy_torch", 20]
+      ["forge", 100], ["alinor_pack", -1], [ "oxy_torch", 20], ["alinor_pack", -1]
     ]
     ],
     "components": [
@@ -246,7 +246,7 @@
   ],
   "tools" : [
     [
-      [ "fire", -1 ]
+      [ "fire", -1 ], ["alinor_pack", -1]
     ]
   ],
   "components" : [
@@ -375,7 +375,7 @@
     {"id":"CUT","level":1}
   ], "tools" : [
     [
-      [ "fire", -1 ]
+      [ "fire", -1 ], ["alinor_pack", -1]
     ]
   ], "components" : [
     [
@@ -670,8 +670,8 @@
   ],
      "tools": [
     [
-      ["forge", 7],
-      ["oxy_torch", 2]
+      ["forge", 7], ["alinor_pack", -1],
+      ["oxy_torch", 2], ["alinor_pack", -1]
       ]
     ],
      "//" : "Extra steel is for stablizers, mass, etc.  These are mostly better thanks to the maker's skill, though.",
@@ -698,8 +698,8 @@
   ],
      "tools": [
     [
-      ["forge", 7],
-      ["oxy_torch", 2]
+      ["forge", 7], ["alinor_pack", -1],
+      ["oxy_torch", 2], ["alinor_pack", -1]
       ]
     ],
      "components": [
@@ -725,8 +725,8 @@
   ],
      "tools": [
     [
-      ["forge", 7],
-      ["oxy_torch", 2]
+      ["forge", 7], ["alinor_pack", -1],
+      ["oxy_torch", 2], ["alinor_pack", -1]
       ]
     ],
      "components": [
@@ -914,10 +914,10 @@
     {"id":"HAMMER","level":3}
     ], "tools": [
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["press", -1]
+      ["press", -1], ["alinor_pack", -1]
      ]
     ],
     "components": [
@@ -946,10 +946,10 @@
     {"id":"HAMMER","level":3}
     ], "tools": [
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["press", -1]
+      ["press", -1], ["alinor_pack", -1]
      ]
     ],
     "components": [
@@ -978,10 +978,10 @@
     {"id":"HAMMER","level":3}
     ], "tools": [
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["press", -1]
+      ["press", -1], ["alinor_pack", -1]
      ]
     ],
     "components": [
@@ -1010,10 +1010,10 @@
     {"id":"HAMMER","level":3}
     ], "tools": [
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["press", -1]
+      ["press", -1], ["alinor_pack", -1]
      ]
     ],
     "components": [
@@ -1042,10 +1042,10 @@
     {"id":"HAMMER","level":3}
     ], "tools": [
      [
-      ["swage", -1]
+      ["swage", -1], ["alinor_pack", -1]
      ],
      [
-      ["press", -1]
+      ["press", -1], ["alinor_pack", -1]
      ]
     ],
     "components": [
@@ -1094,7 +1094,7 @@
   "qualities":[
     {"id":"CUT","level":1}
   ],
-  "tools" : [ [ ["mold_plastic", -1] ],
+  "tools" : [ [ ["mold_plastic", -1], ["alinor_pack", -1] ],
     [
       [ "surface_heat", 15, "LIST" ]
     ]
@@ -1139,14 +1139,14 @@
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
      [
-      ["tongs", -1]
+      ["tongs", -1], ["alinor_pack", -1]
      ],
      [
-      ["crucible", -1],
+      ["crucible", -1], ["alinor_pack", -1],
       ["crucible_clay", -1]
      ],
      [
-      ["forge", 200], [ "oxy_torch", 40]
+      ["forge", 200], ["alinor_pack", -1], [ "oxy_torch", 40], ["alinor_pack", -1]
      ]
     ],
   "components":
@@ -1173,9 +1173,9 @@
     {"id":"HAMMER","level":3},
     { "id": "CHISEL", "level": 3 }
   ], "tools": [
-    [ ["tongs", -1]  ],
-    [ ["swage", -1]  ],
-    [ ["forge", 50], [ "oxy_torch", 10] ]
+    [ ["tongs", -1], ["alinor_pack", -1]  ],
+    [ ["swage", -1], ["alinor_pack", -1]  ],
+    [ ["forge", 50], ["alinor_pack", -1], [ "oxy_torch", 10], ["alinor_pack", -1] ]
            ],
   "components": [
     [
@@ -1217,14 +1217,14 @@
 {"id":"SAW_M","level":1}
 ], "tools": [
 [
-[ "oxy_torch", 6 ],
+[ "oxy_torch", 6 ], ["alinor_pack", -1],
 [ "welder", 30 ],
 [ "welder_crude", 45 ],
-[ "toolset", 45 ]
+[ "toolset", 45 ], ["alinor_pack", -1]
 ],
 [
-[ "hotplate", 50 ],
-[ "toolset", 50 ]
+[ "hotplate", 50 ], ["alinor_pack", -1],
+[ "toolset", 50 ], ["alinor_pack", -1]
 ]
 ],
 "components":
@@ -1258,8 +1258,8 @@
 {"id":"SAW_M","level":1}
 ], "tools": [
 [
-[ "hotplate", 50 ],
-[ "toolset", 50 ]
+[ "hotplate", 50 ], ["alinor_pack", -1],
+[ "toolset", 50 ], ["alinor_pack", -1]
 ]
 ],
 "components":
@@ -1290,8 +1290,8 @@
 {"id":"SAW_M","level":1}
 ], "tools": [
 [
-[ "hotplate", 50 ],
-[ "toolset", 50 ]
+[ "hotplate", 50 ], ["alinor_pack", -1],
+[ "toolset", 50 ], ["alinor_pack", -1]
 ]
 ],
 "components":

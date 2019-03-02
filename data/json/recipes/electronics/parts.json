@@ -14,7 +14,7 @@
     "using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 } ],
     "tools": [
-      [ [ "mold_plastic", -1 ] ]
+      [ [ "mold_plastic", -1 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "plastic_chunk", 20 ] ],
@@ -38,7 +38,7 @@
     "using": [ [ "soldering_standard", 10 ], [ "surface_heat", 10 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 } ],
     "tools": [
-      [ [ "mold_plastic", -1 ] ]
+      [ [ "mold_plastic", -1 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "plastic_chunk", 4 ] ],

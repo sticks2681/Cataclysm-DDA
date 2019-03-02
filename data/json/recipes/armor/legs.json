@@ -178,7 +178,7 @@
     "autolearn": true,
     "using": [ [ "sewing_standard", 20 ] ],
     "tools": [
-      [ [ "mold_plastic", -1 ] ],
+      [ [ "mold_plastic", -1 ], ["alinor_pack", -1] ],
       [ [ "surface_heat", 15, "LIST" ] ]
     ],
     "components": [
@@ -232,7 +232,7 @@
     "time": 15000,
     "book_learn": [ [ "textbook_tailor", 3 ], [ "manual_tailor", 4 ], [ "tailor_portfolio", 3 ] ],
     "using": [ [ "sewing_standard", 25 ] ],
-    "tools": [ [ [ "soldering_iron", 15 ], [ "welder", 15 ], [ "hotplate", 15 ], [ "toolset", 15 ] ] ],
+    "tools": [ [ [ "soldering_iron", 15 ], ["alinor_pack", -1], [ "welder", 15 ], [ "hotplate", 15 ], ["alinor_pack", -1], [ "toolset", 15 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "neoprene", 6 ] ],
       [ [ "plastic_chunk", 8 ] ]
@@ -253,9 +253,9 @@
       { "id": "CHISEL", "level": 3 }
     ],
     "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 150 ], [ "oxy_torch", 30 ] ]
+      [ [ "tongs", -1 ], ["alinor_pack", -1] ],
+      [ [ "swage", -1 ], ["alinor_pack", -1] ],
+      [ [ "forge", 150 ], ["alinor_pack", -1], [ "oxy_torch", 30 ], ["alinor_pack", -1] ]
     ],
     "components": [
       [ [ "steel_lump", 7 ], [ "steel_chunk", 28 ] ],
@@ -361,7 +361,7 @@
     "time": 60000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 40 ] ],
-    "tools": [ [ [ "welder", 10 ], [ "welder_crude", 15 ], [ "soldering_iron", 15 ], [ "toolset", 15 ] ] ],
+    "tools": [ [ [ "welder", 10 ], [ "welder_crude", 15 ], [ "soldering_iron", 15 ], ["alinor_pack", -1], [ "toolset", 15 ], ["alinor_pack", -1] ] ],
     "components": [
       [ [ "rag", 15 ] ],
       [ [ "bag_plastic", 4 ] ],
