@@ -126,7 +126,7 @@
   },
   {
     "type": "npc_class",
-    "id": "NC_WRAITH",
+    "id": "NC_SPECOPS",
     "name": "Wraith",
     "common": false,
     "job_description": "I have come here to chew bubblegum and kick ass...and I'm all out of bubblegum.",
@@ -138,9 +138,9 @@
       { "skill": "ALL", "level": { "rng": [ 10, 10 ] } },
       { "skill": "barter", "level": { "rng": [ 7, 7 ] } }
     ],
-    "worn_override": "NC_WRAITH_worn",
-    "carry_override": "NC_WRAITH_carried",
-    "weapon_override": "NC_WRAITH_wield",
+    "worn_override": "NC_SPECOPS_worn",
+    "carry_override": "NC_SPECOPS_carried",
+    "weapon_override": "NC_SPECOPS_wield",
     "//": "This is a unique NPC who doesn't get randomly selected background traits",
     "traits": [
       [ "DEBUG_NIGHTVISION", 100 ],
@@ -197,7 +197,7 @@
   },
   {
     "type": "item_group",
-    "id": "NC_WRAITH_worn",
+    "id": "NC_SPECOPS_worn",
     "subtype": "collection",
     "entries": [
       { "item": "under_armor_shorts" },
@@ -215,7 +215,7 @@
   },
   {
     "type": "item_group",
-    "id": "NC_WRAITH_carried",
+    "id": "NC_SPECOPS_carried",
     "subtype": "collection",
     "entries": [
       { "item": "broadsword" },
@@ -234,7 +234,7 @@
   },
   {
     "type": "item_group",
-    "id": "NC_WRAITH_wield",
+    "id": "NC_SPECOPS_wield",
     "subtype": "collection",
     "entries": [ { "item": "scar_ssr", "ammo-item": "762_51", "charges": 20 } ]
   },
@@ -243,7 +243,7 @@
     "id": "visitor_Wraith",
     "name_unique": "Wraith",
     "gender": "male",
-    "class": "NC_WRAITH",
+    "class": "NC_SPECOPS",
     "attitude": 0,
     "mission": 7,
     "chat": "TALK_SHELTER",
