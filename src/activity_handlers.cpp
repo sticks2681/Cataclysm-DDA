@@ -705,30 +705,30 @@ void butchery_drops_harvest( item *corpse_item, const mtype &mt, player &p, cons
         }
 
         // BIONIC handling - no code for DISSECT to let the bionic drop fall through
-        if( entry.type == "bionic" || entry.type == "bionic_group" ) {
-            if( action == F_DRESS ) {
-                p.add_msg_if_player( m_bad,
-                                     _( "You suspect there might be bionics implanted in this corpse, that careful dissection might reveal." ) );
-                continue;
-            }
-            if( action == BUTCHER || action == BUTCHER_FULL || action == DISMEMBER ) {
-                switch( rng( 1, 3 ) ) {
-                    case 1:
-                        p.add_msg_if_player( m_bad,
-                                             _( "Your butchering tool encounters something implanted in this corpse, but your rough cuts destroy it." ) );
-                        break;
-                    case 2:
-                        p.add_msg_if_player( m_bad,
-                                             _( "You find traces of implants in the body, but you care only for the flesh." ) );
-                        break;
-                    case 3:
-                        p.add_msg_if_player( m_bad,
-                                             _( "You found some bionics in the body, but harvesting them would require more surgical approach." ) );
-                        break;
-                }
-                continue;
-            }
-        }
+        //if( entry.type == "bionic" || entry.type == "bionic_group" ) {
+        //    if( action == F_DRESS ) {
+        //        p.add_msg_if_player( m_bad,
+        //                            _( "You suspect there might be bionics implanted in this corpse, that careful dissection might reveal." ) );
+        //        continue;
+        //    }
+        //    if( action == BUTCHER || action == BUTCHER_FULL || action == DISMEMBER ) {
+        //        switch( rng( 1, 3 ) ) {
+        //            case 1:
+        //                p.add_msg_if_player( m_bad,
+        //                                     _( "Your butchering tool encounters something implanted in this corpse, but your rough cuts destroy it." ) );
+        //                break;
+        //            case 2:
+        //                p.add_msg_if_player( m_bad,
+        //                                     _( "You find traces of implants in the body, but you care only for the flesh." ) );
+        //                break;
+        //            case 3:
+        //                p.add_msg_if_player( m_bad,
+        //                                     _( "You found some bionics in the body, but harvesting them would require more surgical approach." ) );
+        //                break;
+        //        }
+        //        continue;
+        //    }
+        //}
         if( action == DISSECT ) {
             if( entry.type == "bionic" ) {
                 butcher_cbm_item( entry.drop, p.pos(), bday, roll_butchery() );

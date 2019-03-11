@@ -3045,6 +3045,10 @@ int player::rust_rate( bool return_stat_effect ) const
         ret *= .66;
     }
 
+    if( has_trait( trait_PERFECTMEMORY ) ) {
+        ret *= 0;
+    }
+
     if( ret < 0 ) {
         ret = 0;
     }
