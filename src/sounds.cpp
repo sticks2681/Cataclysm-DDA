@@ -324,9 +324,12 @@ void sounds::process_sound_markers( player *p )
         }
 
         const std::string &description = sound.description.empty() ? "a noise" : sound.description;
-        if( p->is_npc() && !sound.ambient ) {
-            npc *guy = dynamic_cast<npc *>( p );
-            guy->handle_sound( static_cast<int>( sound.category ), description, heard_volume, pos );
+        if( p->is_npc() ) {
+            if( !sound.ambient ) {
+                npc *guy = dynamic_cast<npc *>( p );
+                guy->handle_sound( static_cast<int>( sound.category ), description,
+                                   heard_volume, pos );
+            }
             continue;
         }
 
@@ -1046,6 +1049,8 @@ void sfx::do_footstep()
             ter_str_id( "t_machinery_electronic" ),
         };
         static const std::set<ter_str_id> water = {
+            ter_str_id( "t_water_moving_sh" ),
+            ter_str_id( "t_water_moving_dp" ),
             ter_str_id( "t_water_sh" ),
             ter_str_id( "t_water_dp" ),
             ter_str_id( "t_swater_sh" ),
@@ -1095,6 +1100,8 @@ void sfx::do_obstacle()
     static const std::set<ter_str_id> water = {
         ter_str_id( "t_water_sh" ),
         ter_str_id( "t_water_dp" ),
+        ter_str_id( "t_water_moving_sh" ),
+        ter_str_id( "t_water_moving_dp" ),
         ter_str_id( "t_swater_sh" ),
         ter_str_id( "t_swater_dp" ),
         ter_str_id( "t_water_pool" ),

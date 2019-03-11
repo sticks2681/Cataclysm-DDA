@@ -232,7 +232,7 @@ void print_stamina_bar( const player &p, const catacurses::window &w )
 {
     std::string sta_bar;
     nc_color sta_color;
-    std::tie( sta_bar, sta_color ) = get_hp_bar( p.stamina, p.get_stamina_max() );
+    std::tie( sta_bar, sta_color ) = get_stamina_bar( p.stamina, p.get_stamina_max() );
     wprintz( w, sta_color, sta_bar );
 }
 
@@ -408,7 +408,7 @@ void player::disp_status( const catacurses::window &w, const catacurses::window 
                sideStyle ? 2 : 1, sideStyle ? 0 : 22, hydration_color, hydration_string );
     wrefresh( sideStyle ? w : g->w_location_wider );
 
-    wmove( w, sideStyle ? 3 : 2, 0 );
+    wmove( w, sideStyle ? 3 : 2, sideStyle ? 0 : 22 );
     if( get_fatigue() > EXHAUSTED ) {
         wprintz( w, c_red,    _( "Exhausted" ) );
     } else if( get_fatigue() > DEAD_TIRED ) {
