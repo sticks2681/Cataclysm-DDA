@@ -6,6 +6,10 @@
 #include "item.h"
 #include "json.h"
 #include "translations.h"
+#include "string_id.h"
+#include "type_id.h"
+
+static const itype_id itype_UPS( "UPS" );
 
 namespace
 {
@@ -18,11 +22,11 @@ ammo_map_t &all_ammunition_types()
 }
 } //namespace
 
-void ammunition_type::load_ammunition_type( JsonObject &jsobj )
+void ammunition_type::load_ammunition_type( const JsonObject &jsobj )
 {
     ammunition_type &res = all_ammunition_types()[ ammotype( jsobj.get_string( "id" ) ) ];
     res.name_             = jsobj.get_string( "name" );
-    res.default_ammotype_ = jsobj.get_string( "default" );
+    jsobj.read( "default", res.default_ammotype_, true );
 }
 
 /** @relates string_id */
@@ -62,11 +66,11 @@ void ammunition_type::check_consistency()
         const auto &at = ammo.second.default_ammotype_;
 
         // TODO: these ammo types should probably not have default ammo at all.
-        if( at == "UPS" || at == "components" || at == "thrown" ) {
+        if( at == itype_UPS || at.str() == "components" || at.str() == "thrown" ) {
             continue;
         }
 
-        if( !at.empty() && !item::type_is_defined( at ) ) {
+        if( !at.is_empty() && !item::type_is_defined( at ) ) {
             debugmsg( "ammo type %s has invalid default ammo %s", id.c_str(), at.c_str() );
         }
     }
@@ -74,5 +78,5 @@ void ammunition_type::check_consistency()
 
 std::string ammunition_type::name() const
 {
-    return _( name_.c_str() );
+    return _( name_ );
 }

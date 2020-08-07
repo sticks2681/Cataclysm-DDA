@@ -1,26 +1,28 @@
 #pragma once
-#ifndef WORLDFACTORY_H
-#define WORLDFACTORY_H
+#ifndef CATA_SRC_WORLDFACTORY_H
+#define CATA_SRC_WORLDFACTORY_H
 
+#include <cstddef>
 #include <functional>
 #include <iosfwd>
 #include <map>
 #include <memory>
 #include <vector>
+#include <string>
 
 #include "options.h"
 #include "pimpl.h"
-#include "string_id.h"
+#include "type_id.h"
+
+enum class special_game_type;
 
 class JsonIn;
 class JsonObject;
-enum special_game_id : int;
+
 namespace catacurses
 {
 class window;
 } // namespace catacurses
-struct MOD_INFORMATION;
-using mod_id = string_id<MOD_INFORMATION>;
 
 class save_t
 {
@@ -42,6 +44,7 @@ class save_t
         bool operator!=( const save_t &rhs ) const {
             return !operator==( rhs );
         }
+        save_t( const save_t & ) = default;
         save_t &operator=( const save_t & ) = default;
 };
 
@@ -80,7 +83,7 @@ class mod_manager;
 class mod_ui;
 class input_context;
 
-typedef WORLD *WORLDPTR;
+using WORLDPTR = WORLD *;
 
 class worldfactory
 {
@@ -90,7 +93,7 @@ class worldfactory
 
         // Generate a world
         WORLDPTR make_new_world( bool show_prompt = true, const std::string &world_to_copy = "" );
-        WORLDPTR make_new_world( special_game_id special_type );
+        WORLDPTR make_new_world( special_game_type special_type );
         // Used for unit tests - does NOT verify if the mods can be loaded
         WORLDPTR make_new_world( const std::vector<mod_id> &mods );
         /// Returns the *existing* world of given name.
@@ -106,6 +109,11 @@ class worldfactory
         WORLDPTR active_world;
 
         std::vector<std::string> all_worldnames() const;
+
+        std::string last_world_name;
+        std::string last_character_name;
+
+        void save_last_world_info();
 
         mod_manager &get_mod_manager();
 
@@ -125,10 +133,15 @@ class worldfactory
     private:
         std::map<std::string, std::unique_ptr<WORLD>> all_worlds;
 
+        void load_last_world_info();
+
         std::string pick_random_name();
-        int show_worldgen_tab_options( const catacurses::window &win, WORLDPTR world );
-        int show_worldgen_tab_modselection( const catacurses::window &win, WORLDPTR world );
-        int show_worldgen_tab_confirm( const catacurses::window &win, WORLDPTR world );
+        int show_worldgen_tab_options( const catacurses::window &win, WORLDPTR world,
+                                       const std::function<bool()> &on_quit );
+        int show_worldgen_tab_modselection( const catacurses::window &win, WORLDPTR world,
+                                            const std::function<bool()> &on_quit );
+        int show_worldgen_tab_confirm( const catacurses::window &win, WORLDPTR world,
+                                       const std::function<bool()> &on_quit );
 
         void draw_modselection_borders( const catacurses::window &win, const input_context &ctxtp );
         void draw_mod_list( const catacurses::window &w, int &start, size_t cursor,
@@ -140,16 +153,17 @@ class worldfactory
         pimpl<mod_manager> mman;
         pimpl<mod_ui> mman_ui;
 
-        typedef std::function<int( const catacurses::window &, WORLDPTR )> worldgen_display;
+        using worldgen_display = std::function<int ( const catacurses::window &, WORLDPTR,
+                                 const std::function<bool()> )>;
 
         std::vector<worldgen_display> tabs;
 };
 
-void load_world_option( JsonObject &jo );
+void load_world_option( const JsonObject &jo );
 
 //load external option from json
-void load_external_option( JsonObject &jo );
+void load_external_option( const JsonObject &jo );
 
 extern std::unique_ptr<worldfactory> world_generator;
 
-#endif
+#endif // CATA_SRC_WORLDFACTORY_H
