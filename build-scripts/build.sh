@@ -21,10 +21,14 @@ then
     make -j "$num_jobs" style-json
 
     tools/dialogue_validator.py data/json/npcs/* data/json/npcs/*/* data/json/npcs/*/*/*
+
+    tools/json_tools/generic_guns_validator.py
+
     # Also build chkjson (even though we're not using it), to catch any
     # compile errors there
     make -j "$num_jobs" chkjson
-elif [ -n "$JUST_JSON" ]
+# Skip the rest of the run if this change is pure json and this job doesn't test any extra mods
+elif [ -n "$JUST_JSON" -a -z "$MODS" ]
 then
     echo "Early exit on just-json change"
     exit 0
@@ -174,7 +178,7 @@ else
         run_tests ./tests/cata_test &
         if [ -n "$MODS" ]
         then
-            run_tests ./tests/cata_test --user-dir=modded $MODS &
+            run_tests ./tests/cata_test --user-dir=modded $MODS 2>&1 | sed 's/^/MOD> /' &
             wait -n
         fi
         wait -n
@@ -185,10 +189,7 @@ else
         # Run the tests one more time, without actually running any tests, just to verify that all
         # the mod data can be successfully loaded
 
-        # Use a blacklist of mods that currently fail to load cleanly.  Hopefully this list will
-        # shrink over time.
-        blacklist=build-scripts/mod_test_blacklist
-        mods="$(./build-scripts/get_all_mods.py $blacklist)"
+        mods="$(./build-scripts/get_all_mods.py)"
         run_tests ./tests/cata_test --user-dir=all_modded --mods="$mods" '~*'
     fi
 fi

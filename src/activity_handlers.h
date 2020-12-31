@@ -125,8 +125,6 @@ namespace activity_handlers
 
 bool resume_for_multi_activities( player &p );
 /** activity_do_turn functions: */
-void burrow_do_turn( player_activity *act, player *p );
-void craft_do_turn( player_activity *act, player *p );
 void fill_liquid_do_turn( player_activity *act, player *p );
 void pickaxe_do_turn( player_activity *act, player *p );
 void drop_do_turn( player_activity *act, player *p );
@@ -157,7 +155,6 @@ void chop_trees_do_turn( player_activity *act, player *p );
 void fetch_do_turn( player_activity *act, player *p );
 void move_loot_do_turn( player_activity *act, player *p );
 void travel_do_turn( player_activity *act, player *p );
-void drive_do_turn( player_activity *act, player *p );
 void adv_inventory_do_turn( player_activity *act, player *p );
 void armor_layers_do_turn( player_activity *act, player *p );
 void atm_do_turn( player_activity *act, player *p );
@@ -187,7 +184,6 @@ extern const std::map< activity_id, std::function<void( player_activity *, playe
 do_turn_functions;
 
 /** activity_finish functions: */
-void burrow_finish( player_activity *act, player *p );
 void butcher_finish( player_activity *act, player *p );
 void firstaid_finish( player_activity *act, player *p );
 void fish_finish( player_activity *act, player *p );
@@ -195,17 +191,15 @@ void forage_finish( player_activity *act, player *p );
 void longsalvage_finish( player_activity *act, player *p );
 void pulp_finish( player_activity *act, player *p );
 void pickaxe_finish( player_activity *act, player *p );
-void reload_finish( player_activity *act, player *p );
 void start_fire_finish( player_activity *act, player *p );
 void train_finish( player_activity *act, player *p );
-void milk_finish( player_activity *act, player *p );
 void shear_finish( player_activity *act, player *p );
 void vehicle_finish( player_activity *act, player *p );
 void start_engines_finish( player_activity *act, player *p );
 void churn_finish( player_activity *act, player *p );
 void plant_seed_finish( player_activity *act, player *p );
 void oxytorch_finish( player_activity *act, player *p );
-void cracking_finish( player_activity *act, player *p );
+void cracking_finish( player_activity *act, player *guy );
 void repair_item_finish( player_activity *act, player *p );
 void mend_item_finish( player_activity *act, player *p );
 void gunmod_add_finish( player_activity *act, player *p );

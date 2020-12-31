@@ -1,5 +1,6 @@
 #include "messages.h"
 
+#include "cached_options.h"
 #include "calendar.h"
 #include "catacharset.h"
 #include "color.h"
@@ -12,6 +13,7 @@
 #include "input.h"
 #include "json.h"
 #include "output.h"
+#include "panels.h"
 #include "point.h"
 #include "string_formatter.h"
 #include "string_input_popup.h"
@@ -21,26 +23,20 @@
 
 #if defined(__ANDROID__)
 #include <SDL_keyboard.h>
-
-#include "options.h"
 #endif
+#include "options.h"
 
 #include <algorithm>
 #include <deque>
 #include <iterator>
 #include <memory>
 
-// sidebar messages flow direction
-extern bool log_from_top;
-extern int message_ttl;
-extern int message_cooldown;
-
 namespace
 {
 
 struct game_message : public JsonDeserializer, public JsonSerializer {
     std::string       message;
-    time_point timestamp_in_turns  = 0;
+    time_point timestamp_in_turns  = calendar::turn_zero;
     int               timestamp_in_user_actions = 0;
     int               count = 1;
     // number of times this message has been seen while it was in cooldown.
@@ -121,7 +117,7 @@ class messages_impl
     public:
         std::deque<game_message> messages;   // Messages to be printed
         std::vector<game_message> cooldown_templates; // Message cooldown
-        time_point curmes = 0; // The last-seen message.
+        time_point curmes = calendar::turn_zero; // The last-seen message.
         bool active = true;
 
         bool has_undisplayed_messages() const {
@@ -192,7 +188,8 @@ class messages_impl
                 return;
             }
 
-            while( messages.size() > 255 ) {
+            unsigned int message_limit = get_option<int>( "MESSAGE_LIMIT" );
+            while( messages.size() > message_limit ) {
                 messages.pop_front();
             }
 
@@ -205,7 +202,7 @@ class messages_impl
         void hide_message_in_cooldown( game_message &message ) {
             message.cooldown_hidden = false;
 
-            if( message_cooldown <= 0 || message.turn() <= 0 ) {
+            if( message_cooldown <= 0 || message.turn() <= calendar::turn_zero ) {
                 return;
             }
 
@@ -234,9 +231,9 @@ class messages_impl
             }
 
             // current message turn.
-            const auto cm_turn = to_turn<int>( message.turn() );
+            const int cm_turn = to_turn<int>( message.turn() );
             // maximum range of the cooldown timer.
-            const auto max_cooldown_range = to_turn<int>( cooldown_it->turn() ) + message_cooldown;
+            const int max_cooldown_range = to_turn<int>( cooldown_it->turn() ) + message_cooldown;
             // If the current message is in the cooldown range then hide it.
             if( cm_turn <= max_cooldown_range ) {
                 message.cooldown_hidden = true;
@@ -266,15 +263,15 @@ class messages_impl
          */
         void refresh_cooldown( const game_message &message, const game_message_flags flags ) {
             // is cooldown used? (also checks for messages arriving here at game initialization: we don't care about them).
-            if( message_cooldown <= 0 || message.turn() <= 0 ) {
+            if( message_cooldown <= 0 || message.turn() <= calendar::turn_zero ) {
                 return;
             }
 
             // housekeeping: remove any cooldown message with an expired cooldown time from the cooldown queue.
-            const auto now = calendar::turn;
+            const time_point now = calendar::turn;
             for( auto it = cooldown_templates.begin(); it != cooldown_templates.end(); ) {
                 // number of turns elapsed since the cooldown started.
-                const auto turns = to_turns<int>( now - it->turn() );
+                const int turns = to_turns<int>( now - it->turn() );
                 if( turns >= message_cooldown ) {
                     // time elapsed! remove it.
                     it = cooldown_templates.erase( it );
@@ -476,8 +473,9 @@ Messages::dialog::dialog()
 
 void Messages::dialog::init( ui_adaptor &ui )
 {
-    w_width = std::min( TERMX, FULL_SCREEN_WIDTH );
-    w_height = std::min( TERMY, FULL_SCREEN_HEIGHT );
+    w_width = std::max( 45, TERMX - 2 * ( panel_manager::get_manager().get_width_right() +
+                                          panel_manager::get_manager().get_width_left() ) );
+    w_height = TERMY;
     w_x = ( TERMX - w_width ) / 2;
     w_y = ( TERMY - w_height ) / 2;
 
